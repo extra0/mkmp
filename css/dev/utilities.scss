@@ -1,0 +1,44 @@
+// ---------------------  Variables
+
+$main_font: 'PFSquareSansPro-Regular', sans-serif;
+$site_bg: #e9e9e9;
+$main_color: #000;
+
+// FONTS
+$bold: 'PFSquareSansPro-Bold';
+$light: 'PFSquareSansPro-Light';
+$medit: 'PFSquareSansPro-MedItalic';
+$med: 'PFSquareSansPro-Medium';
+$xbold: 'PFSquareSansPro-XBlack';
+
+// COLORS
+$blue: #3a63ac;
+
+
+// ---------------------   Mixins
+
+html { height: 100%;}
+body {
+    font-family: $main_font;
+    font-weight: normal;
+    background: $site_bg;
+    height: 100%;
+    color: $main_color;
+}
+.main-wrapper { min-height: 100%;padding-top: 22px;}
+
+.container-fluid {
+    min-width: 1000px;
+    max-width: 1200px;
+    position: relative;
+    font-size: 14px;
+    margin: 0 auto;
+    // padding: 0px 15px;
+    box-sizing: border-box;
+}
+ul.list-inline { margin-left: 0; }
+label { font-weight: normal;}
+h1, h2, h3, h4, h5 { font-family: $main_font; }
+img {max-width: 100%;}
+a img {border: none;}
+button, input, textarea {outline: none;}

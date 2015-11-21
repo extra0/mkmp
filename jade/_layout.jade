@@ -5,7 +5,9 @@ html
 	body
 		include includes/_modals
 		.main-wrapper
-			include includes/_header
-			block content
-			.buffer
-		include includes/_footer
+			.container-fluid
+				include includes/_header
+				.content
+					block content
+				include includes/_footer
+		include includes/_script
