@@ -5,3 +5,25 @@ header.header
 		ul.header__menu
 			each item in menu
 				li.header__menu-item: a.header__menu-link(href="#") #{item}
+	.header__contacts-block
+		h3.header__contacts-title Контакты
+		p.header__item-title
+			| Тел/факс: 
+			a.header__item-text(href="tel:+74956468622") #{phone}
+		p.header__item-title
+			| E-mail: 
+			a.header__item-text(href="mailto:#{email}") #{email}
+		p.header__item-title
+			| Адрес: 
+			span.header__item-text #{address}
+		.header__social-block
+			a(href="#").header__social-link
+				img(src="/img/vk.png", alt="")
+			a(href="#").header__social-link
+				img(src="/img/fb.png", alt="")
+			a(href="#").header__social-link
+				img(src="/img/inst.png", alt="")
+			a(href="#").header__social-link
+				img(src="/img/youtube.png", alt="")
+	.text-center
+		button.btn-up(type="button")
