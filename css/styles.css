@@ -3,37 +3,37 @@
   font-family: "PFSquareSansPro-Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/PFSquareSansPro-Bold.ttf") format("truetype"), url("../fonts/PFSquareSansPro-Bold.svg#PFSquareSansPro-Bold") format("svg");
+  src: url("../fonts/PFSquareSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFSquareSansPro-Bold.ttf") format("truetype"), url("../fonts/PFSquareSansPro-Bold.svg#PFSquareSansPro-Bold") format("svg");
 }
 @font-face {
   font-family: "PFSquareSansPro-Light";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/PFSquareSansPro-Light.ttf") format("truetype"), url("../fonts/PFSquareSansPro-Light.svg#PFSquareSansPro-Light") format("svg");
+  src: url("../fonts/PFSquareSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PFSquareSansPro-Light.ttf") format("truetype"), url("../fonts/PFSquareSansPro-Light.svg#PFSquareSansPro-Light") format("svg");
 }
 @font-face {
   font-family: "PFSquareSansPro-MedItalic";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/PFSquareSansPro-MedItalic.ttf") format("truetype"), url("../fonts/PFSquareSansPro-MedItalic.svg#PFSquareSansPro-MedItalic") format("svg");
+  src: url("../fonts/PFSquareSansPro-MedItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFSquareSansPro-MedItalic.ttf") format("truetype"), url("../fonts/PFSquareSansPro-MedItalic.svg#PFSquareSansPro-MedItalic") format("svg");
 }
 @font-face {
   font-family: "PFSquareSansPro-Medium";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/PFSquareSansPro-Medium.ttf") format("truetype"), url("../fonts/PFSquareSansPro-Medium.svg#PFSquareSansPro-Medium") format("svg");
+  src: url("../fonts/PFSquareSansPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFSquareSansPro-Medium.ttf") format("truetype"), url("../fonts/PFSquareSansPro-Medium.svg#PFSquareSansPro-Medium") format("svg");
 }
 @font-face {
   font-family: "PFSquareSansPro-Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/PFSquareSansPro-Regular.ttf") format("truetype"), url("../fonts/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular") format("svg");
+  src: url("../fonts/PFSquareSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PFSquareSansPro-Regular.ttf") format("truetype"), url("../fonts/PFSquareSansPro-Regular.svg#PFSquareSansPro-Regular") format("svg");
 }
 @font-face {
   font-family: "PFSquareSansPro-XBlack";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/PFSquareSansPro-XBlack.ttf") format("truetype"), url("../fonts/PFSquareSansPro-XBlack.svg#PFSquareSansPro-XBlack") format("svg");
+  src: url("../fonts/PFSquareSansPro-XBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/PFSquareSansPro-XBlack.ttf") format("truetype"), url("../fonts/PFSquareSansPro-XBlack.svg#PFSquareSansPro-XBlack") format("svg");
 }
 html {
   height: 100%;
