@@ -1,15 +1,6 @@
 extends _layout
 block content
 	.content-inner
-		.main-photo__block
-			.main-photo__inner
-				a(href="#")
-					img(src="img/content/right_photo.jpg", alt="")
-					p.main-photo__preview-text Lorem ipsum dolor sit amet. Lorem ipsum dolor.
-			.main-photo__inner
-				a(href="#")
-					img(src="img/content/right_photo1.jpg", alt="")
-					p.main-photo__preview-text Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
 		.slider
 			ul.slider__block
 				li.slider__item
@@ -24,3 +15,107 @@ block content
 						.slider__preview-text-block
 							p.slider__preview-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem numquam sit inventore aut possimus non sequi aperiam, adipisci assumenda cum.
 							p.slider__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio cupiditate dolorem nobis nesciunt. Consequuntur ipsum minus rerum omnis exercitationem, recusandae laboriosam hic accusantium, quis porro soluta placeat sit itaque reiciendis!
+		.main-photo__block
+			.main-photo__inner
+				a(href="#")
+					img(src="img/content/right_photo.jpg", alt="")
+					p.main-photo__preview-text Lorem ipsum dolor sit amet. Lorem ipsum dolor.
+			.main-photo__inner
+				a(href="#")
+					img(src="img/content/right_photo1.jpg", alt="")
+					p.main-photo__preview-text Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+		.statistics__block
+			.statistics__text-block
+				h1.statistics__title.title клуб<br>в цифрах
+				p.statistics__text статистика за февраль
+			.statistics__info-block
+				ul.statistics__info-list
+					li.statistics__info-item
+						img.statistics__info-img(src="img/info_img1.png", alt="")
+						p.statistics__info-number 5
+						p.statistics__info-text мероприятий
+					li.statistics__info-item
+						img.statistics__info-img(src="img/info_img2.png", alt="")
+						p.statistics__info-number 12
+						p.statistics__info-text новых членов
+					li.statistics__info-item
+						img.statistics__info-img(src="img/info_img3.png", alt="")
+						p.statistics__info-number 1450
+						p.statistics__info-text участников клуба
+		.about-main__section
+			.about-main__text-block
+				h3.about-main__title О КЛУБЕ
+				p.about-main__text Московский Клуб Молодых Предпринимателей – это не молодежное движение, не общественная организация и не политическое объединение. Клуб Молодых Предпринимателей – это закрытое бизнес-сообщество молодых и успешных предпринимателей, основной целью которого является помощь в развитии существующего бизнеса Членов Клуба и создании новых бизнес - проектов. Московский Клуб Молодых Предпринимателей создан в 2007 году и является самым крупным молодежным бизнес - сообществом г. Москвы,   на данный момент в Клубе состоит более 1300 молодых и успешных предпринимателей. 
+				p.about-main__text Клуб организовал в Москве за 2013 год более 80 собственных мероприятий  – это тренинги, мастер-классы, круглые столы, бизнес-ужины, неформальные встречи, образовательные программы и т.д., а также выступил партнером или соорганизатором еще более чем в 150 мероприятий. На своей площадке Клуб объединяет ведущие Российские молодежные бизнес-сообщества, такие как Деловая Россия, ОПОРА России, В марте 2013 года, мы провели Актив Клуба, на который пригласили 130 Членов Клуба, которые являются самыми успешными молодыми предпринимателями – годовой оборот компаний Актива Клуба составляет 0,5 млрд $, и насчитывает несколько тысяч рабочих мест.
+			.about-main__form-block
+				form(action="#" method="post")
+					label.about-main__label Фамилия Имя Отчество
+					input.about-main__input(type="text")
+					label.about-main__label Телефон
+					input.about-main__input.mask(type="text")
+					label.about-main__label E-mail
+					input.about-main__input(type="email")
+					.text-center
+						a.about-main__link.fancybox(href="#") Правила вступления
+					button.btn.full-width._font-size-21(type="submit") Вступить в клуб
+	.content-inner
+		.subtitle-wrap._color-blue._position-center
+			h2.subtitle Мероприятия клуба
+		.event__section
+			#datepicker
+			.event__item
+				a(href="#")
+					img.event__bg-img(src="img/content/event_bg.jpg", alt="")
+				//- .event__info-block
+					p.event__number 29
+						span.event__month Июня
+					p.event__title Бизнес-тренинг “Эффективное управление переговорами”
+			.event__item
+				a(href="#")
+					img.event__bg-img(src="img/content/event_bg.jpg", alt="")
+				//- .event__info-block
+					p.event__number 29
+						span.event__month Июня
+					p.event__title Бизнес-тренинг “Эффективное управление переговорами”
+			.event__item
+				a(href="#")
+					img.event__bg-img(src="img/content/event_bg.jpg", alt="")
+				//- .event__info-block
+					p.event__number 29
+						span.event__month Июня
+					p.event__title Бизнес-тренинг “Эффективное управление переговорами”
+			.event__item
+				a(href="#")
+					img.event__bg-img(src="img/content/event_bg.jpg", alt="")
+				//- .event__info-block
+					p.event__number 29
+						span.event__month Июня
+					p.event__title Бизнес-тренинг “Эффективное управление переговорами”
+			.event__item
+				a(href="#")
+					img.event__bg-img(src="img/content/event_bg.jpg", alt="")
+				//- .event__info-block
+					p.event__number 29
+						span.event__month Июня
+					p.event__title Бизнес-тренинг “Эффективное управление переговорами”
+			.event__item
+				a(href="#")
+					img.event__bg-img(src="img/content/event_bg.jpg", alt="")
+				//- .event__info-block
+					p.event__number 29
+						span.event__month Июня
+					p.event__title Бизнес-тренинг “Эффективное управление переговорами”
+			.event__item
+				a(href="#")
+					img.event__bg-img(src="img/content/event_bg.jpg", alt="")
+				//- .event__info-block
+					p.event__number 29
+						span.event__month Июня
+					p.event__title Бизнес-тренинг “Эффективное управление переговорами”
+			.event__item
+				a(href="#")
+					img.event__bg-img(src="img/content/event_bg.jpg", alt="")
+				//- .event__info-block
+					p.event__number 29
+						span.event__month Июня
+					p.event__title Бизнес-тренинг “Эффективное управление переговорами”

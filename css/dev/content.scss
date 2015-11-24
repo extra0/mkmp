@@ -1,7 +1,56 @@
+/* тайтлы */
+.title {
+	font-size: 56px;
+	font-family: $bold;
+	color: $blue;
+	text-transform: uppercase;
+	&._color-white {
+		color: #fff;
+	}
+}
+.subtitle {
+	font-size: 27px;
+	position: relative;
+	font-family: $xbold;
+	display: inline-block;
+	top: -18px;
+	margin: 0;
+	text-transform: uppercase;
+	&-wrap {
+		border-top: 1px solid;
+		border-color: #bfbfbf;
+		margin-top: 30px;
+		&._position-center {
+			text-align: center;
+			.subtitle {
+				padding: 0 25px;
+			}
+		}
+		&._position-left {
+			.subtitle {
+				padding: 0 25px 0 0;	
+			}
+		}
+		&._color-blue {
+			.subtitle {
+				color: $blue;
+				background: #fff;
+			}
+		}
+		&._color-white {
+			border-color: #fff;
+			.subtitle {
+				color: #fff;
+				background: $blue;
+			}
+		}
+	}
+}
+
 .content {
 	margin-left: 240px;
 	&-inner {
-		padding: 32px 25px;
+		padding:32px 25px 25px 25px;
 		background: #fff;
 		margin-bottom: 10px;
 	}
@@ -9,11 +58,11 @@
 /* блок справа от слайдера */
 .main-photo {
 	&__block {
-		float: right;
+		display: inline-block;
 		width: 26.4%;
 	}
 	&__inner {
-		max-width: 240px;
+		max-width: 239px;
 		position: relative;
 		margin-bottom: -1px;
 	}
@@ -35,8 +84,240 @@
 	display: inline-block;
 	vertical-align: top;
 	overflow: hidden;
-	width: 74%;
+	width: 73%;
 	&__block {
 		margin: 0;
+	}
+	&__preview-text-block {
+		background: rgba(0, 0, 0, 0.55);
+		color: #fff;
+		padding: 7px 10px;
+		@include box-sizing(border-box);
+		@include position(absolute, null null 0 0);
+	}
+	&__preview-title {
+		margin: 0 0 5px 0;
+		font-size: 16px;
+	}
+	&__preview-text {
+		font-size: 12px;
+		margin: 0;
+	}
+}
+//  статистика клуба
+.statistics {
+	&__block {
+		margin-bottom: 37px;
+	}
+	&__text-block,
+	&__info-block {
+		width: 40%;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 40px;
+	}
+	&__info-block {
+		width: 59%;
+	}
+	&__info-list {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	&__title {
+		margin: 0px -14px 9px 41px;
+	    letter-spacing: 3px;
+	    line-height: 56px;
+	}
+	&__text {
+		text-transform: uppercase;
+		color: #1d1d1b;
+		font-size: 25px;
+		margin: 0 0 0 40px;
+	}
+	&__info-item {
+		display: inline-block;
+		vertical-align: top;
+		width: 26%;
+		margin: 0 1%;
+	}
+	&__info-img {
+		
+	}
+	&__info-number {
+		color: $red;
+		font-size: 40px;
+		margin: 0;
+		font-family: $bold;
+	}
+	&__info-text {
+		text-transform: uppercase;
+		font-family: $bold;
+		font-size: 13px;
+		margin: 0;
+	}
+}
+// о клубе на главной
+.about-main {
+	&__section {
+		position: relative;
+	}
+	&__text-block {
+		color: #fff;
+		display: inline-block;
+		background: #5aade1;
+		margin: 23px 0 0 -25px;
+		padding: 25px 0 23px 40px;
+		position: relative;
+		@include box-sizing(border-box);
+		width: 68%;
+		z-index: 2;
+		&:before {
+			content: '';
+		    height: 100%;
+		    width: 30px;
+		    background: url(../img/triangle.png) 0 0 no-repeat;
+		    background-size: 100% 100%;
+		   	@include box-sizing(border-box);
+			@include position(absolute, 0 -30px null null);
+			z-index: 1;
+		}
+	}
+	&__title {
+		font-size: 20px;
+		margin: 0 0 5px 0;
+	}
+	&__text {
+		font-size: 13px;
+		margin: 0 0 7px 0;
+		line-height: 16px;
+	}
+	// форма на главной 
+	&__form-block {
+		display: inline-block;
+		float: right;
+		vertical-align: top;
+		width: 36%;
+		margin: 0 -25px -25px 0;
+		padding: 36px 45px 44px 57px;
+		background: #1c4093 url(../img/form_logo.png) right 33px no-repeat;
+		@include box-sizing(border-box);
+		@include position(absolute, nill 0 0 null);
+		&:before {
+			content: '';
+			background: #1c4093;
+			@include position(absolute, 0 null null -80%);
+			width: 80%;
+			height: 100%;
+			z-index: 0;
+		}
+		form {
+			position: relative;
+			max-width: 225px;
+		}
+	}
+	&__label {
+		color: #fff;
+		display: block;
+		font-size: 16px;
+		font-family: $light;
+		margin: 0 0 2px 0;
+	}
+	&__input {
+		@include box-sizing(border-box);
+		width: 100%;
+		height: 38px;
+		line-height: 38px;
+		padding: 0 10px;
+		font-size: 16px;
+		background: #fff;
+		border: none;
+		margin: 0 0 10px 0;
+	}
+	&__link {
+		color: #fff;
+		text-decoration: none;
+		display: inline-block;
+		margin: 3px 0 21px 0;
+		border-bottom: 1px dashed #fff;
+		&:hover {
+			border-bottom: 1px solid transparent;
+		}
+	}
+}
+// кнопки 
+.btn {
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 25px;
+	background: $red;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	max-width: 100%;
+	@include box-sizing(border-box);
+	@include transition(all 0.4s ease-in-out);
+	&:hover {
+		background: lighten($red, 12%);
+	}
+	&._font-size-21 {
+		font-size: 21px;
+	}
+}
+#datepicker {
+	float: left;
+    margin: 0 2px 9px 3.5%;
+    width: 32%;
+    max-width: 280px;
+}
+/* блок мероприятий */
+.event {
+	&__section {
+		margin-left: -3.6%;
+	}
+	&__item {
+		width: 29.7%;
+	    margin-left: 3.3%;
+	    margin-bottom: 26px;
+	    display: inline-block;
+	    vertical-align: top;
+	    position: relative;
+		&:hover {
+			.event__info-block {
+				opacity: 0;
+				z-index: -1;
+			}
+		}
+	}
+	&__info-block {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		padding: 25px;
+		z-index: 1;
+		background: #dfe3eb;
+		@include box-sizing(border-box);
+		@include position(absolute, 0 null null 0);
+		@include transition(all 0.4s ease-in-out);
+	}
+	&__number {
+		font-family: $med;
+		color: #6d6d6d;
+		margin: 0;
+		font-size: 29px;
+		line-height: 24
+	}
+	&__month {
+		display: block;
+		font-size: 13px;
+	}
+	&__title {
+		color: $blue;
+		font-family: $med;
+		font-size: 15px;
+		margin: 10px 0 0 0;
+	}
+	&__bg-img {
+		width: 100%;
 	}
 }

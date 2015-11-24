@@ -14,8 +14,10 @@ $xbold: 'PFSquareSansPro-XBlack';
 // COLORS
 $blue: #3a63ac;
 $dark-blue: #1c4093;
+$red: #e9301b;
 
-// ---------------------   Mixins
+
+
 
 html { height: 100%;}
 body {
@@ -31,7 +33,7 @@ body {
     &:before {
         content: '';
         @include position(absolute, 0 null null 0);
-        width: 37vw;
+        width: 38vw;
         background: $dark-blue;
         height: 100%;
     }
@@ -51,6 +53,17 @@ h1, h2, h3, h4, h5 { font-family: $main_font; }
 img {max-width: 100%;}
 a img {border: none;}
 button, input, textarea {outline: none;}
+
+//  extra classies
+.full-width {
+    width: 100%;
+}
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
 .text-center {
     text-align: center;
 }

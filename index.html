@@ -8,6 +8,7 @@
     <meta keywords="">
     <link rel="shortcut icon" type="images/vnd.microsoft.icon" href="favicon.ico">
     <link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href="css/jquery-ui.css" rel="stylesheet" media="all">
     <link href="css/styles.css" rel="stylesheet" media="all">
     <script src="js/jquery.js"></script>
     <title></title>
@@ -42,12 +43,6 @@
         </header>
         <div class="content">
           <div class="content-inner">
-            <div class="main-photo__block">
-              <div class="main-photo__inner"><a href="#"><img src="img/content/right_photo.jpg" alt="">
-                  <p class="main-photo__preview-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor.</p></a></div>
-              <div class="main-photo__inner"><a href="#"><img src="img/content/right_photo1.jpg" alt="">
-                  <p class="main-photo__preview-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></a></div>
-            </div>
             <div class="slider">
               <ul class="slider__block">
                 <li class="slider__item"><a href="#"><img src="/img/content/slider.jpg" alt="" class="slider__img">
@@ -62,6 +57,77 @@
                     </div></a></li>
               </ul>
             </div>
+            <div class="main-photo__block">
+              <div class="main-photo__inner"><a href="#"><img src="img/content/right_photo.jpg" alt="">
+                  <p class="main-photo__preview-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor.</p></a></div>
+              <div class="main-photo__inner"><a href="#"><img src="img/content/right_photo1.jpg" alt="">
+                  <p class="main-photo__preview-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></a></div>
+            </div>
+            <div class="statistics__block">
+              <div class="statistics__text-block">
+                <h1 class="statistics__title title">клуб<br>в цифрах</h1>
+                <p class="statistics__text">статистика за февраль</p>
+              </div>
+              <div class="statistics__info-block">
+                <ul class="statistics__info-list">
+                  <li class="statistics__info-item"><img src="img/info_img1.png" alt="" class="statistics__info-img">
+                    <p class="statistics__info-number">5</p>
+                    <p class="statistics__info-text">мероприятий</p>
+                  </li>
+                  <li class="statistics__info-item"><img src="img/info_img2.png" alt="" class="statistics__info-img">
+                    <p class="statistics__info-number">12</p>
+                    <p class="statistics__info-text">новых членов</p>
+                  </li>
+                  <li class="statistics__info-item"><img src="img/info_img3.png" alt="" class="statistics__info-img">
+                    <p class="statistics__info-number">1450</p>
+                    <p class="statistics__info-text">участников клуба</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-main__section">
+              <div class="about-main__text-block">
+                <h3 class="about-main__title">О КЛУБЕ</h3>
+                <p class="about-main__text">Московский Клуб Молодых Предпринимателей – это не молодежное движение, не общественная организация и не политическое объединение. Клуб Молодых Предпринимателей – это закрытое бизнес-сообщество молодых и успешных предпринимателей, основной целью которого является помощь в развитии существующего бизнеса Членов Клуба и создании новых бизнес - проектов. Московский Клуб Молодых Предпринимателей создан в 2007 году и является самым крупным молодежным бизнес - сообществом г. Москвы,   на данный момент в Клубе состоит более 1300 молодых и успешных предпринимателей. </p>
+                <p class="about-main__text">Клуб организовал в Москве за 2013 год более 80 собственных мероприятий  – это тренинги, мастер-классы, круглые столы, бизнес-ужины, неформальные встречи, образовательные программы и т.д., а также выступил партнером или соорганизатором еще более чем в 150 мероприятий. На своей площадке Клуб объединяет ведущие Российские молодежные бизнес-сообщества, такие как Деловая Россия, ОПОРА России, В марте 2013 года, мы провели Актив Клуба, на который пригласили 130 Членов Клуба, которые являются самыми успешными молодыми предпринимателями – годовой оборот компаний Актива Клуба составляет 0,5 млрд $, и насчитывает несколько тысяч рабочих мест.</p>
+              </div>
+              <div class="about-main__form-block">
+                <form action="#" method="post">
+                  <label class="about-main__label">Фамилия Имя Отчество</label>
+                  <input type="text" class="about-main__input">
+                  <label class="about-main__label">Телефон</label>
+                  <input type="text" class="about-main__input mask">
+                  <label class="about-main__label">E-mail</label>
+                  <input type="email" class="about-main__input">
+                  <div class="text-center"><a href="#" class="about-main__link fancybox">Правила вступления</a></div>
+                  <button type="submit" class="btn full-width _font-size-21">Вступить в клуб</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="content-inner">
+            <div class="subtitle-wrap _color-blue _position-center">
+              <h2 class="subtitle">Мероприятия клуба</h2>
+            </div>
+            <div class="event__section">
+              <div id="datepicker"></div>
+              <div class="event__item"><a href="#"><img src="img/content/event_bg.jpg" alt="" class="event__bg-img"></a>
+              </div>
+              <div class="event__item"><a href="#"><img src="img/content/event_bg.jpg" alt="" class="event__bg-img"></a>
+              </div>
+              <div class="event__item"><a href="#"><img src="img/content/event_bg.jpg" alt="" class="event__bg-img"></a>
+              </div>
+              <div class="event__item"><a href="#"><img src="img/content/event_bg.jpg" alt="" class="event__bg-img"></a>
+              </div>
+              <div class="event__item"><a href="#"><img src="img/content/event_bg.jpg" alt="" class="event__bg-img"></a>
+              </div>
+              <div class="event__item"><a href="#"><img src="img/content/event_bg.jpg" alt="" class="event__bg-img"></a>
+              </div>
+              <div class="event__item"><a href="#"><img src="img/content/event_bg.jpg" alt="" class="event__bg-img"></a>
+              </div>
+              <div class="event__item"><a href="#"><img src="img/content/event_bg.jpg" alt="" class="event__bg-img"></a>
+              </div>
+            </div>
           </div>
         </div>
         <footer class="footer">
@@ -69,6 +135,9 @@
         </footer>
       </div>
     </div>
+    <!-- только там где есть календарь-->
+    <script src="js/jquery-ui.js"></script>
+    <!-- ----------------->
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
   </body>
