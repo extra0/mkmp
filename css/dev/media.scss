@@ -15,7 +15,7 @@
 		width: 40%;
 		max-width: none;
 	}
-	.event {
+	.date-event {
 		&__item {
 			width: 40%;
 		}
@@ -23,4 +23,35 @@
 			margin-left: 8.4%;
 		}
 	}
+	.event {
+		&__section {
+		    margin: 0 0 40px 12%;
+		}
+		&__block {
+			width: 47%;
+			margin: 46px 1% 0 0;
+			&:nth-child(3n) {
+				margin-left: 0;
+			}
+		}
+	}
+}
+@media (max-width: 1190px) and (min-widthL 1141px) {
+	.news {
+		&__item {
+			margin: 0 0 40px 6.1%;
+		}
+	}
+}
+@media (max-width: 1190px) {
+	.news {
+		&__item {
+			width: 27%;
+		    margin: 0 0 40px 5.3%;
+		}
+		&__banner {
+			width: 29%;
+		}
+	}
+
 }

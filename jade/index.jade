@@ -56,69 +56,241 @@ block content
 					label.about-main__label E-mail
 					input.about-main__input(type="email")
 					.text-center
-						a.about-main__link.fancybox(href="#") Правила вступления
+						// модальное окно вступления в клуб
+						.modal#enter_club
+							p.modal__title Правила вступления
+							ol.modal__list
+								li.modal__list-item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur natus, iusto excepturi ipsam! Aut modi nesciunt nostrum porro voluptate reprehenderit similique magnam consectetur, labore non ex molestiae numquam tempora odit, velit distinctio id soluta autem, incidunt! Aspernatur, dignissimos ullam sapiente ratione, numquam consectetur doloribus! Accusamus molestiae enim, sapiente in!
+								li.modal__list-item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur natus, iusto excepturi ipsam! Aut modi nesciunt nostrum porro voluptate reprehenderit similique magnam consectetur, labore non ex molestiae numquam tempora odit, velit distinctio id soluta autem, incidunt! Aspernatur, dignissimos ullam sapiente ratione, numquam consectetur doloribus! Accusamus molestiae enim, sapiente in!
+								li.modal__list-item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur natus, iusto excepturi ipsam! Aut modi nesciunt nostrum porro voluptate reprehenderit similique magnam consectetur, labore non ex molestiae numquam tempora odit, velit distinctio id soluta autem, incidunt! Aspernatur, dignissimos ullam sapiente ratione, numquam consectetur doloribus! Accusamus molestiae enim, sapiente in!
+								li.modal__list-item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur natus, iusto excepturi ipsam! Aut modi nesciunt nostrum porro voluptate reprehenderit similique magnam consectetur, labore non ex molestiae numquam tempora odit, velit distinctio id soluta autem, incidunt! Aspernatur, dignissimos ullam sapiente ratione, numquam consectetur doloribus! Accusamus molestiae enim, sapiente in!
+						// конец модального
+						a.about-main__link.fancybox(href="#enter_club") Правила вступления
 					button.btn.full-width._font-size-21(type="submit") Вступить в клуб
 	.content-inner
 		.subtitle-wrap._color-blue._position-center
 			h2.subtitle Мероприятия клуба
-		.event__section
+		.date-event__section
 			#datepicker
-			.event__item
+			.date-event__item
 				a(href="#")
-					.event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
-					.event__info-block
-						p.event__number 29
-							span.event__month Июня
-						p.event__title Бизнес-тренинг “Эффективное управление переговорами
-			.event__item
+					.date-event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
+					.date-event__info-block
+						p.date-event__number 29
+							span.date-event__month Июня
+						p.date-event__title Бизнес-тренинг “Эффективное управление переговорами
+			.date-event__item
 				a(href="#")
-					.event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
-					.event__info-block
-						p.event__number 29
-							span.event__month Июня
-						p.event__title Бизнес-тренинг “Эффективное управление переговорами
-			.event__item
+					.date-event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
+					.date-event__info-block
+						p.date-event__number 29
+							span.date-event__month Июня
+						p.date-event__title Бизнес-тренинг “Эффективное управление переговорами
+			.date-event__item
 				a(href="#")
-					.event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
-					.event__info-block
-						p.event__number 29
-							span.event__month Июня
-						p.event__title Бизнес-тренинг “Эффективное управление переговорами
-			.event__item
+					.date-event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
+					.date-event__info-block
+						p.date-event__number 29
+							span.date-event__month Июня
+						p.date-event__title Бизнес-тренинг “Эффективное управление переговорами
+			.date-event__item
 				a(href="#")
-					.event__bg-img(style="background: url(../img/content/right_photo1.jpg) 0 0 no-repeat")
-					.event__info-block
-						p.event__number 29
-							span.event__month Июня
-						p.event__title Бизнес-тренинг “Эффективное управление переговорами
-			.event__item
+					.date-event__bg-img(style="background: url(../img/content/right_photo1.jpg) 0 0 no-repeat")
+					.date-event__info-block
+						p.date-event__number 29
+							span.date-event__month Июня
+						p.date-event__title Бизнес-тренинг “Эффективное управление переговорами
+			.date-event__item
 				a(href="#")
-					.event__bg-img(style="background: url(../img/content/right_photo.jpg) 0 0 no-repeat")
-					.event__info-block
-						p.event__number 29
-							span.event__month Июня
-						p.event__title Бизнес-тренинг “Эффективное управление переговорами
-			.event__item
+					.date-event__bg-img(style="background: url(../img/content/right_photo.jpg) 0 0 no-repeat")
+					.date-event__info-block
+						p.date-event__number 29
+							span.date-event__month Июня
+						p.date-event__title Бизнес-тренинг “Эффективное управление переговорами
+			.date-event__item
 				a(href="#")
-					.event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
-					.event__info-block
-						p.event__number 29
-							span.event__month Июня
-						p.event__title Бизнес-тренинг “Эффективное управление переговорами
-			.event__item
+					.date-event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
+					.date-event__info-block
+						p.date-event__number 29
+							span.date-event__month Июня
+						p.date-event__title Бизнес-тренинг “Эффективное управление переговорами
+			.date-event__item
 				a(href="#")
-					.event__bg-img(style="background: url(../img/content/right_photo.jpg) 0 0 no-repeat")
-					.event__info-block
-						p.event__number 29
-							span.event__month Июня
-						p.event__title Бизнес-тренинг “Эффективное управление переговорами
-			.event__item
+					.date-event__bg-img(style="background: url(../img/content/right_photo.jpg) 0 0 no-repeat")
+					.date-event__info-block
+						p.date-event__number 29
+							span.date-event__month Июня
+						p.date-event__title Бизнес-тренинг “Эффективное управление переговорами
+			.date-event__item
 				a(href="#")
-					.event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
-					.event__info-block
-						p.event__number 29
-							span.event__month Июня
-						p.event__title Бизнес-тренинг “Эффективное управление переговорами
+					.date-event__bg-img(style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat")
+					.date-event__info-block
+						p.date-event__number 29
+							span.date-event__month Июня
+						p.date-event__title Бизнес-тренинг “Эффективное управление переговорами
 	.banner__block
 		a(href="#")
 			img(src="img/content/large_banner.jpg", alt="")
+	.content-inner
+		.news__banner
+			a(href="#")
+				img.news__banner-img(src="img/content/banner.jpg", alt="")
+		.subtitle-wrap._color-blue._position-left
+			h2.subtitle Новости клуба
+		.news__list-wrap
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt modi molestiae, quibusdam dolor reprehenderit qui.
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet.
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt modi molestiae, quibusdam dolor reprehenderit qui.
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet.
+			.news__item
+				a(href="#")
+					img.news__img(src="img/content/news_img.jpg", alt="")
+				p.news__date 21.04.2014
+				a.news__title-link(href="#")
+					h2.news__title Предпринимателям предложили тест-драйв мощного бизнес-кара
+				p.news__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.
+	.content-inner.bg-color-blue
+		.subtitle-wrap._color-white._position-center
+			h2.subtitle Наши проекты/мероприятия
+		.event__section
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Сервисная<br>компания
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Индивидуальное<br>продвижение проектов
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Workshop
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Business<br>Connect
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Политические и<br>общественные проекты
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Неформальные<br>мероприятия
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Бизнес<br>ужины
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Спец.программы по<br>аналитике бизнеса
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Бизнес десант
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Мозговые<br>штурмы
+			.event__block
+				a.event__link(href="#")
+					span.event__img
+					p.event__text Деловой журнал<br>“Дайджест MOSMP”
+	.content-inner
+		.subtitle-wrap._color-blue._position-center
+			h2.subtitle Кейсы
+		.case__section
+			.case__block
+				.case__wrap-img
+					a(href="#")
+						img.case__img(src="img/content/ava.jpg", alt="")
+				.case__preview-text-block
+					.case__rating
+					a.case__link(href="#") Donec congue, erat nec euismod luctus,
+					p.case__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt magnam blanditiis quaerat iure expedita ducimus, cupiditate quos quae temporibus molestiae, aspernatur! Ad eaque adipisci, nisi animi iusto deserunt fugit voluptatum.
+			.case__block
+				.case__wrap-img
+					a(href="#")
+						img.case__img(src="img/content/ava.jpg", alt="")
+				.case__preview-text-block
+					.case__rating
+					a.case__link(href="#") Donec congue, erat nec euismod luctus,
+					p.case__preview-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat laboriosam enim modi accusantium, non. Aliquam mollitia non eaque expedita, perferendis adipisci ullam? Harum molestias, excepturi, nemo quae doloribus laboriosam asperiores, temporibus beatae optio corporis delectus sed distinctio culpa. Illo qui magnam tempore sequi similique, esse architecto eum corrupti quos possimus!
+			.case__block
+				.case__wrap-img
+					a(href="#")
+						img.case__img(src="img/content/ava.jpg", alt="")
+				.case__preview-text-block
+					.case__rating
+					a.case__link(href="#") Donec congue, erat nec euismod luctus,
+					p.case__preview-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, enim.
+			.case__block
+				.case__wrap-img
+					a(href="#")
+						img.case__img(src="img/content/ava.jpg", alt="")
+				.case__preview-text-block
+					.case__rating
+					a.case__link(href="#") Donec congue, erat nec euismod luctus,
+					p.case__preview-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam tempora temporibus commodi magni, veniam velit iure dolores pariatur nam eum. Consequatur veniam, suscipit dignissimos laborum et quibusdam odit, harum mollitia.
+			.text-center
+				a.btn._font-size-28(href="#") Остальные кейсы

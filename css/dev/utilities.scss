@@ -16,9 +16,6 @@ $blue: #3a63ac;
 $dark-blue: #1c4093;
 $red: #e9301b;
 
-
-
-
 html { height: 100%;}
 body {
     font-family: $main_font;
@@ -30,12 +27,14 @@ body {
 .main-wrapper { 
     padding-top: 22px;
     position: relative;
+    // background: url(../img/tree.png) 0 0 no-repeat;
     &:before {
         content: '';
         @include position(absolute, 0 null null 0);
         width: 38vw;
         background: $dark-blue;
         height: 100%;
+        z-index: -1;
     }
 }
 
@@ -47,23 +46,26 @@ body {
     margin: 0 auto;
     @include box-sizing(border-box);
 }
+
 ul.list-inline { margin-left: 0; }
 label { font-weight: normal;}
-h1, h2, h3, h4, h5 { font-family: $main_font; }
 img {max-width: 100%;}
 a img {border: none;}
 button, input, textarea {outline: none;}
 
 //  extra classies
-.full-width {
-    width: 100%;
-}
-.no-margin {
-    margin: 0!important;
-}
-.no-padding {
-    padding: 0!important;
-}
-.text-center {
-    text-align: center;
-}
+.full-width {width: 100%;}
+
+// spaces
+.no-margin {margin: 0!important;}
+.no-padding {padding: 0!important;}
+
+// align
+.text-center {text-align: center;}
+
+// color
+.bg-color-blue {background: $blue!important;}
+
+// floats
+.pull-right {float: right;}
+.pull-left {float: left;}

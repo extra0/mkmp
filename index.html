@@ -99,7 +99,19 @@
                   <input type="text" class="about-main__input mask">
                   <label class="about-main__label">E-mail</label>
                   <input type="email" class="about-main__input">
-                  <div class="text-center"><a href="#" class="about-main__link fancybox">Правила вступления</a></div>
+                  <div class="text-center">
+                    <!-- модальное окно вступления в клуб-->
+                    <div id="enter_club" class="modal">
+                      <p class="modal__title">Правила вступления</p>
+                      <ol class="modal__list">
+                        <li class="modal__list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur natus, iusto excepturi ipsam! Aut modi nesciunt nostrum porro voluptate reprehenderit similique magnam consectetur, labore non ex molestiae numquam tempora odit, velit distinctio id soluta autem, incidunt! Aspernatur, dignissimos ullam sapiente ratione, numquam consectetur doloribus! Accusamus molestiae enim, sapiente in!</li>
+                        <li class="modal__list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur natus, iusto excepturi ipsam! Aut modi nesciunt nostrum porro voluptate reprehenderit similique magnam consectetur, labore non ex molestiae numquam tempora odit, velit distinctio id soluta autem, incidunt! Aspernatur, dignissimos ullam sapiente ratione, numquam consectetur doloribus! Accusamus molestiae enim, sapiente in!</li>
+                        <li class="modal__list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur natus, iusto excepturi ipsam! Aut modi nesciunt nostrum porro voluptate reprehenderit similique magnam consectetur, labore non ex molestiae numquam tempora odit, velit distinctio id soluta autem, incidunt! Aspernatur, dignissimos ullam sapiente ratione, numquam consectetur doloribus! Accusamus molestiae enim, sapiente in!</li>
+                        <li class="modal__list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur natus, iusto excepturi ipsam! Aut modi nesciunt nostrum porro voluptate reprehenderit similique magnam consectetur, labore non ex molestiae numquam tempora odit, velit distinctio id soluta autem, incidunt! Aspernatur, dignissimos ullam sapiente ratione, numquam consectetur doloribus! Accusamus molestiae enim, sapiente in!</li>
+                      </ol>
+                    </div>
+                    <!-- конец модального--><a href="#enter_club" class="about-main__link fancybox">Правила вступления</a>
+                  </div>
                   <button type="submit" class="btn full-width _font-size-21">Вступить в клуб</button>
                 </form>
               </div>
@@ -109,62 +121,193 @@
             <div class="subtitle-wrap _color-blue _position-center">
               <h2 class="subtitle">Мероприятия клуба</h2>
             </div>
-            <div class="event__section">
+            <div class="date-event__section">
               <div id="datepicker"></div>
-              <div class="event__item"><a href="#">
-                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="event__bg-img"></div>
-                  <div class="event__info-block">
-                    <p class="event__number">29<span class="event__month">Июня</span></p>
-                    <p class="event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
+              <div class="date-event__item"><a href="#">
+                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="date-event__bg-img"></div>
+                  <div class="date-event__info-block">
+                    <p class="date-event__number">29<span class="date-event__month">Июня</span></p>
+                    <p class="date-event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
                   </div></a></div>
-              <div class="event__item"><a href="#">
-                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="event__bg-img"></div>
-                  <div class="event__info-block">
-                    <p class="event__number">29<span class="event__month">Июня</span></p>
-                    <p class="event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
+              <div class="date-event__item"><a href="#">
+                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="date-event__bg-img"></div>
+                  <div class="date-event__info-block">
+                    <p class="date-event__number">29<span class="date-event__month">Июня</span></p>
+                    <p class="date-event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
                   </div></a></div>
-              <div class="event__item"><a href="#">
-                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="event__bg-img"></div>
-                  <div class="event__info-block">
-                    <p class="event__number">29<span class="event__month">Июня</span></p>
-                    <p class="event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
+              <div class="date-event__item"><a href="#">
+                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="date-event__bg-img"></div>
+                  <div class="date-event__info-block">
+                    <p class="date-event__number">29<span class="date-event__month">Июня</span></p>
+                    <p class="date-event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
                   </div></a></div>
-              <div class="event__item"><a href="#">
-                  <div style="background: url(../img/content/right_photo1.jpg) 0 0 no-repeat" class="event__bg-img"></div>
-                  <div class="event__info-block">
-                    <p class="event__number">29<span class="event__month">Июня</span></p>
-                    <p class="event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
+              <div class="date-event__item"><a href="#">
+                  <div style="background: url(../img/content/right_photo1.jpg) 0 0 no-repeat" class="date-event__bg-img"></div>
+                  <div class="date-event__info-block">
+                    <p class="date-event__number">29<span class="date-event__month">Июня</span></p>
+                    <p class="date-event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
                   </div></a></div>
-              <div class="event__item"><a href="#">
-                  <div style="background: url(../img/content/right_photo.jpg) 0 0 no-repeat" class="event__bg-img"></div>
-                  <div class="event__info-block">
-                    <p class="event__number">29<span class="event__month">Июня</span></p>
-                    <p class="event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
+              <div class="date-event__item"><a href="#">
+                  <div style="background: url(../img/content/right_photo.jpg) 0 0 no-repeat" class="date-event__bg-img"></div>
+                  <div class="date-event__info-block">
+                    <p class="date-event__number">29<span class="date-event__month">Июня</span></p>
+                    <p class="date-event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
                   </div></a></div>
-              <div class="event__item"><a href="#">
-                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="event__bg-img"></div>
-                  <div class="event__info-block">
-                    <p class="event__number">29<span class="event__month">Июня</span></p>
-                    <p class="event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
+              <div class="date-event__item"><a href="#">
+                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="date-event__bg-img"></div>
+                  <div class="date-event__info-block">
+                    <p class="date-event__number">29<span class="date-event__month">Июня</span></p>
+                    <p class="date-event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
                   </div></a></div>
-              <div class="event__item"><a href="#">
-                  <div style="background: url(../img/content/right_photo.jpg) 0 0 no-repeat" class="event__bg-img"></div>
-                  <div class="event__info-block">
-                    <p class="event__number">29<span class="event__month">Июня</span></p>
-                    <p class="event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
+              <div class="date-event__item"><a href="#">
+                  <div style="background: url(../img/content/right_photo.jpg) 0 0 no-repeat" class="date-event__bg-img"></div>
+                  <div class="date-event__info-block">
+                    <p class="date-event__number">29<span class="date-event__month">Июня</span></p>
+                    <p class="date-event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
                   </div></a></div>
-              <div class="event__item"><a href="#">
-                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="event__bg-img"></div>
-                  <div class="event__info-block">
-                    <p class="event__number">29<span class="event__month">Июня</span></p>
-                    <p class="event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
+              <div class="date-event__item"><a href="#">
+                  <div style="background: url(../img/content/event_bg.jpg) 0 0 no-repeat" class="date-event__bg-img"></div>
+                  <div class="date-event__info-block">
+                    <p class="date-event__number">29<span class="date-event__month">Июня</span></p>
+                    <p class="date-event__title">Бизнес-тренинг “Эффективное управление переговорами</p>
                   </div></a></div>
             </div>
           </div>
           <div class="banner__block"><a href="#"><img src="img/content/large_banner.jpg" alt=""></a></div>
+          <div class="content-inner">
+            <div class="news__banner"><a href="#"><img src="img/content/banner.jpg" alt="" class="news__banner-img"></a></div>
+            <div class="subtitle-wrap _color-blue _position-left">
+              <h2 class="subtitle">Новости клуба</h2>
+            </div>
+            <div class="news__list-wrap">
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.</p>
+              </div>
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt modi molestiae, quibusdam dolor reprehenderit qui.</p>
+              </div>
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.</p>
+              </div>
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.</p>
+              </div>
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt modi molestiae, quibusdam dolor reprehenderit qui.</p>
+              </div>
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.  Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="news__item"><a href="#"><img src="img/content/news_img.jpg" alt="" class="news__img"></a>
+                <p class="news__date">21.04.2014</p><a href="#" class="news__title-link">
+                  <h2 class="news__title">Предпринимателям предложили тест-драйв мощного бизнес-кара</h2></a>
+                <p class="news__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, consequatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-inner bg-color-blue">
+            <div class="subtitle-wrap _color-white _position-center">
+              <h2 class="subtitle">Наши проекты/мероприятия</h2>
+            </div>
+            <div class="event__section">
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Сервисная<br>компания</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Индивидуальное<br>продвижение проектов</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Workshop</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Business<br>Connect</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Политические и<br>общественные проекты</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Неформальные<br>мероприятия</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Бизнес<br>ужины</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Спец.программы по<br>аналитике бизнеса</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Бизнес десант</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Мозговые<br>штурмы</p></a></div>
+              <div class="event__block"><a href="#" class="event__link"><span class="event__img"></span>
+                  <p class="event__text">Деловой журнал<br>“Дайджест MOSMP”</p></a></div>
+            </div>
+          </div>
+          <div class="content-inner">
+            <div class="subtitle-wrap _color-blue _position-center">
+              <h2 class="subtitle">Кейсы</h2>
+            </div>
+            <div class="case__section">
+              <div class="case__block">
+                <div class="case__wrap-img"><a href="#"><img src="img/content/ava.jpg" alt="" class="case__img"></a></div>
+                <div class="case__preview-text-block">
+                  <div class="case__rating"></div><a href="#" class="case__link">Donec congue, erat nec euismod luctus,</a>
+                  <p class="case__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt magnam blanditiis quaerat iure expedita ducimus, cupiditate quos quae temporibus molestiae, aspernatur! Ad eaque adipisci, nisi animi iusto deserunt fugit voluptatum.</p>
+                </div>
+              </div>
+              <div class="case__block">
+                <div class="case__wrap-img"><a href="#"><img src="img/content/ava.jpg" alt="" class="case__img"></a></div>
+                <div class="case__preview-text-block">
+                  <div class="case__rating"></div><a href="#" class="case__link">Donec congue, erat nec euismod luctus,</a>
+                  <p class="case__preview-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat laboriosam enim modi accusantium, non. Aliquam mollitia non eaque expedita, perferendis adipisci ullam? Harum molestias, excepturi, nemo quae doloribus laboriosam asperiores, temporibus beatae optio corporis delectus sed distinctio culpa. Illo qui magnam tempore sequi similique, esse architecto eum corrupti quos possimus!</p>
+                </div>
+              </div>
+              <div class="case__block">
+                <div class="case__wrap-img"><a href="#"><img src="img/content/ava.jpg" alt="" class="case__img"></a></div>
+                <div class="case__preview-text-block">
+                  <div class="case__rating"></div><a href="#" class="case__link">Donec congue, erat nec euismod luctus,</a>
+                  <p class="case__preview-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, enim.</p>
+                </div>
+              </div>
+              <div class="case__block">
+                <div class="case__wrap-img"><a href="#"><img src="img/content/ava.jpg" alt="" class="case__img"></a></div>
+                <div class="case__preview-text-block">
+                  <div class="case__rating"></div><a href="#" class="case__link">Donec congue, erat nec euismod luctus,</a>
+                  <p class="case__preview-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam tempora temporibus commodi magni, veniam velit iure dolores pariatur nam eum. Consequatur veniam, suscipit dignissimos laborum et quibusdam odit, harum mollitia.</p>
+                </div>
+              </div>
+              <div class="text-center"><a href="#" class="btn _font-size-28">Остальные кейсы</a></div>
+            </div>
+          </div>
         </div>
         <footer class="footer">
-          <p>© 2014  Московский клуб молодых предпринимателей</p>
+          <div class="footer__info-block">
+            <div class="footer__statistic"><img src="img/content/statistic.jpg" alt=""></div>
+            <p class="footer__text">Адрес: 103062 г. Москва, ул. Покровка, д. 47/24</p>
+            <p class="footer__text">Телефон: +7 (495) 646-86-22</p>
+            <p class="footer__text">E-mail: <a href="mailto:info@mosmp.ru">info@mosmp.ru</a></p>
+          </div>
+          <div class="footer__copyright">
+            <p>© 2014  Московский клуб молодых предпринимателей</p>
+          </div>
         </footer>
       </div>
     </div>

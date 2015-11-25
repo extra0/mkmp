@@ -1,2 +1,10 @@
 footer.footer
-	p © 2014  Московский клуб молодых предпринимателей
+	.footer__info-block
+		.footer__statistic
+			img(src="img/content/statistic.jpg", alt="")
+		p.footer__text Адрес: #{address}
+		p.footer__text Телефон: #{phone}
+		p.footer__text E-mail: 
+			a(href="mailto:#{email}") #{email}
+	.footer__copyright
+		p © 2014  Московский клуб молодых предпринимателей
