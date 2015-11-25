@@ -932,8 +932,8 @@ button, input, textarea {
 
 #datepicker {
   float: left;
-  margin: 0 2px 9px 3.5%;
-  width: 32%;
+  margin: 0 5px 9px 3.5%;
+  width: 29.4%;
   max-width: 280px;
 }
 
@@ -962,7 +962,7 @@ button, input, textarea {
   opacity: 1;
   width: 100%;
   height: 100%;
-  padding: 13px 13px 13px 28px;
+  padding: 13px 20px 13px 28px;
   z-index: 1;
   background: #dfe3eb;
   -webkit-box-sizing: border-box;
@@ -1022,6 +1022,22 @@ button, input, textarea {
   }
   .statistics__text-block {
     width: 51%;
+  }
+
+  .ui-widget-content {
+    padding: 32px 38px 13px 38px;
+  }
+
+  #datepicker {
+    width: 40%;
+    max-width: none;
+  }
+
+  .event__item {
+    width: 40%;
+  }
+  .event__section {
+    margin-left: 8.4%;
   }
 }
 

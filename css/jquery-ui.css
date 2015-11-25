@@ -291,7 +291,7 @@ button.ui-button::-moz-focus-inner {
 	font-size: 1em;
 }
 .ui-widget-content {
-	padding: 32px 21px 13px 21px;
+	padding: 32px 28px 13px 28px;
 	background: #3a63ac;
 	min-height: 295px;
 	box-sizing: border-box;

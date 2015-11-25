@@ -55,7 +55,7 @@ $(function(){
 		firstDay: 1,
 		isRTL: false,
 		numberOfMonths: 1
-
 	});
+	
 
 });

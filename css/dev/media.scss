@@ -8,4 +8,19 @@
 			width: 51%;
 		}
 	}
+	.ui-widget-content {
+		padding: 32px 38px 13px 38px;
+	}
+	#datepicker {
+		width: 40%;
+		max-width: none;
+	}
+	.event {
+		&__item {
+			width: 40%;
+		}
+		&__section {
+			margin-left: 8.4%;
+		}
+	}
 }
