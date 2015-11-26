@@ -1392,11 +1392,11 @@ button, input, textarea {
 .leadership__contact-link._menu-img:before {
   background: url(../img/menu.png) 0 0 no-repeat;
 }
-.leadership__contact-link._blue-dashed-link {
+.leadership__contact-link._blue-solid-link {
   color: #3964ad;
-  border-bottom: 1px dashed;
+  border-bottom: 1px solid;
 }
-.leadership__contact-link._blue-dashed-link:hover {
+.leadership__contact-link._blue-solid-link:hover {
   border-bottom: 1px solid transparent;
 }
 .leadership__link-wrap {

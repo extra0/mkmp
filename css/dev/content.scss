@@ -630,9 +630,9 @@
 				background: url(../img/menu.png) 0 0 no-repeat;
 			}
 		}
-		&._blue-dashed-link {
+		&._blue-solid-link {
 			color: #3964ad;
-			border-bottom: 1px dashed;
+			border-bottom: 1px solid;
 			&:hover {
 				border-bottom: 1px solid transparent;
 			}
