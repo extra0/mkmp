@@ -27,6 +27,7 @@ body {
 .main-wrapper { 
     padding-top: 22px;
     position: relative;
+    overflow: hidden;
     // background: url(../img/tree.png) 0 0 no-repeat;
     &:before {
         content: '';

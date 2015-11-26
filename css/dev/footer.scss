@@ -1,6 +1,8 @@
 .footer {
     margin-left: 240px;
     clear: both;
+    position: relative;
+    z-index: 2;
 	&__info-block {
 		background: #3964ad;
 		padding: 17px 25px 10px 25px;

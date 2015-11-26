@@ -50,6 +50,7 @@ body {
 .main-wrapper {
   padding-top: 22px;
   position: relative;
+  overflow: hidden;
 }
 .main-wrapper:before {
   content: '';
@@ -1292,6 +1293,7 @@ button, input, textarea {
   color: #1c4093;
 }
 
+/* модальное вступления в клуб */
 #enter_club {
   width: 850px;
   background: #fff url(../img/modal_enter_bg.png) left bottom no-repeat;
@@ -1301,9 +1303,111 @@ button, input, textarea {
   padding: 50px 70px;
 }
 
+/* страница руководства */
+.leadership__section {
+  padding: 60px 0% 20px 9%;
+}
+.leadership__block {
+  margin-bottom: 45px;
+}
+.leadership__description-block {
+  margin-left: 179px;
+}
+.leadership__img {
+  max-width: 153px;
+  max-height: 153px;
+  border-radius: 50%;
+  float: left;
+}
+.leadership__title {
+  font-size: 24px;
+  color: #1c4093;
+  margin: 0 0 22px 0;
+  position: relative;
+  top: 5px;
+  font-weight: normal;
+}
+.leadership__list {
+  padding: 0 0 0 26px;
+  margin: 0;
+  list-style-type: none;
+}
+.leadership__list-item {
+  position: relative;
+  letter-spacing: -0.6px;
+  color: #000;
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+.leadership__list-item:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  width: 8px;
+  height: 8px;
+  background: #1c4093;
+  border-radius: 50%;
+}
+.leadership__info-block {
+  display: inline-block;
+  width: 67%;
+  vertical-align: top;
+  border-right: 1px solid #cecece;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.leadership__contact-block {
+  width: 29%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 13px;
+  padding-left: 62px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.leadership__contact-link {
+  color: #5b5b5b;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.leadership__contact-link:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+}
+.leadership__contact-link._phone-img:before {
+  background: url(../img/phone.png) 0 0 no-repeat;
+}
+.leadership__contact-link._email-img:before {
+  background: url(../img/mail.png) 0 0 no-repeat;
+}
+.leadership__contact-link._menu-img:before {
+  background: url(../img/menu.png) 0 0 no-repeat;
+}
+.leadership__contact-link._blue-dashed-link {
+  color: #3964ad;
+  border-bottom: 1px dashed;
+}
+.leadership__contact-link._blue-dashed-link:hover {
+  border-bottom: 1px solid transparent;
+}
+.leadership__link-wrap {
+  margin-bottom: 17px;
+}
+
 .footer {
   margin-left: 240px;
   clear: both;
+  position: relative;
+  z-index: 2;
 }
 .footer__info-block {
   background: #3964ad;
