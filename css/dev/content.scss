@@ -779,6 +779,10 @@
 				background: rgba(28, 64, 147, 1);
 			}
 		}
+		iframe {
+			width: 100%!important;
+			height: 100%!important;
+		}
 	}
 	&__bg-img {
 		width: 100%;

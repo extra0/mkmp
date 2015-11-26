@@ -1548,6 +1548,10 @@ button, input, textarea {
 .gallery__block:hover .gallery__title-wrapper {
   background: #1c4093;
 }
+.gallery__block iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
 .gallery__bg-img {
   width: 100%;
   height: 100%;
