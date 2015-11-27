@@ -26,7 +26,7 @@
 .subtitle {
 	font-size: 27px;
 	position: relative;
-	font-family: $bold;
+	font-family: $xbold;
 	display: inline-block;
 	top: -18px;
 	margin: 0;
@@ -51,6 +51,7 @@
 			}
 		}
 		&._color-blue {
+			border-color: $blue;
 			.subtitle {
 				color: $blue;
 				background: #fff;
@@ -185,6 +186,9 @@
 		font-size: 40px;
 		margin: 0;
 		font-family: $bold;
+		&._color-blue {
+			color: #5aade1;
+		}
 	}
 	&__info-text {
 		text-transform: uppercase;
@@ -217,6 +221,22 @@
 		   	@include box-sizing(border-box);
 			@include position(absolute, 0 -30px null null);
 			z-index: 1;
+		}
+		&._about-page {
+			margin: 0 0 0 -25px;
+			padding: 29px 0 29px 20px;
+			text-align: center;
+			background: #3964AD;
+			&:before {
+				content: '';
+			    height: 100%;
+			    width: 30px;
+			    background: url(../img/triangle_dark.png) 0 0 no-repeat;
+			    background-size: 100% 100%;
+			   	@include box-sizing(border-box);
+				@include position(absolute, 0 -30px null null);
+				z-index: 1;
+			}
 		}
 	}
 	&__title {
@@ -251,6 +271,10 @@
 			position: relative;
 			max-width: 225px;
 		}
+		&.absolute-top {
+			padding-top: 50px;
+			@include position(absolute, -32px null null null);
+		}
 	}
 	&__label {
 		color: #fff;
@@ -278,6 +302,61 @@
 		border-bottom: 1px dashed #fff;
 		&:hover {
 			border-bottom: 1px solid transparent;
+		}
+	}
+	&__detail-text-block {
+		margin-top: 60px;
+		img {
+			margin: 0 45px 40px 0;
+		}
+		p {
+			font-size: 13px;
+			margin: 0 0 14px 0;
+			line-height: 21px;
+		}
+	}
+	&__rule {
+		text-align: center;
+		margin: 30px 0 20px!important;
+	    font-size: 20px !important;
+	    letter-spacing: 0.6px;
+	    line-height: 31px!important;
+		span {
+			text-transform: uppercase;
+			display: block;
+			color: $dark-blue;
+		}
+	}
+	&__large-form {
+	    background: #284f9e url(../img/form_logo.png) right 0px no-repeat;
+	    @include box-sizing(border-box);
+	    padding: 30px 20px;
+	}
+	&__input-block {
+		width: 60%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__input-half {
+		width: 48%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__link-block {
+		vertical-align: top;
+		display: inline-block;
+		width: 20%;
+		margin: 60px 0 0 0;
+		text-align: center;
+	}
+	&__sumbit-block {
+		vertical-align: top;
+		display: inline-block;
+		width: 18%;
+		margin-top: 24px;
+		> * {
+			line-height: 30px;
+			padding: 20px 0!important;
 		}
 	}
 }
@@ -591,6 +670,7 @@
 	}
 }
 /* модальное вступления в клуб */
+#rules,
 #enter_club {
 	width: 850px;
 	background: #fff url(../img/modal_enter_bg.png) left bottom no-repeat;
@@ -1022,4 +1102,134 @@
 	padding: 30px;
 	width: 495px;
 	@include box-sizing(border-box);	
+}
+/* список наград */
+.rewards {
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		margin: 25px 0;
+		text-align: center;
+	}
+	&__item {
+		vertical-align: top;
+		margin: 0 3px 10px 3px;
+		display: inline-block;
+	}
+}
+/* блок членства в клубе */
+.membership {
+	&__block {
+		margin: 25px 0;
+		text-align: center;
+		p {
+			line-height: 23px;
+		}
+	}
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		margin: 40px 0 30px 0;
+	}
+	&__list-item {
+		width: 29%;
+		margin: 0 1.5%;
+		vertical-align: top;
+		display: inline-block;
+	}
+	&__link {
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 20px;
+		border-bottom: 1px dashed #e9301b;
+		color: #e9301b;
+		line-height: 22px;
+		text-decoration: none;
+		&:hover {
+			border-bottom: 1px solid transparent;
+		}
+	}
+	&__img {
+		margin-bottom: 10px;
+	}
+	&__strong-text {
+		font-size: 20px;
+		line-height: 27px!important;
+		margin: 40px 0 0 0;
+	}
+}
+/* блок в контактами */
+.contact {
+	&__map {
+		width: 52%;
+		height: 420px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__block {
+		display: inline-block;
+		width: 45%;
+		margin-left: 15px;
+		vertical-align: top;
+	}
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	&__list-item {
+		margin-bottom: 35px;
+	}
+	&__title {
+		font-size: 21px;
+		margin: 0 0 11px;
+		color: #0081c8;
+	}
+	&__text {
+		margin: 0 0 5px 0;
+		font-size: 13px;
+		span {
+			font-size: 16px;
+		}
+	}
+}
+/* цели и задачи */
+.task {
+	&__block {
+		margin: 20px 0;
+		@include box-sizing(border-box);
+		padding: 0 10px;
+		p {
+			font-size: 16px;
+			line-height: 24px;
+			@include box-sizing(border-box);
+			padding: 0 10px;
+		}
+	}
+	&__list {
+		list-style-type: none;
+	}
+	&__list-item {
+		margin-bottom: 11px;
+		font-size: 13px;
+		position: relative;
+		&:before {
+			content: '';
+			@include position(absolute, 4px null null -19px);
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: #5aade1;
+		}
+	}
+	&__title {
+		@include display(flex);
+		@include align-items(center);
+		font-weight: normal;
+		font-size: 24px;
+		margin: 34px 0 -5px 0;
+		img {
+			margin-right: 15px;
+		}
+	}
 }

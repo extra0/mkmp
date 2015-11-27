@@ -43,7 +43,6 @@ body {
     max-width: 1200px;
     position: relative;
     font-size: 14px;
-    // margin: 0 auto;
     @include box-sizing(border-box);
 }
 .rubl {
@@ -51,14 +50,13 @@ body {
     display: inline-block;
 }
 
-ul.list-inline { margin-left: 0; }
 label { font-weight: normal;}
 img {max-width: 100%;}
 a img {border: none;}
 button, input, textarea {outline: none;}
 
 //  extra classies
-.full-width {width: 100%;}
+.full-width {width: 100%!important;}
 
 .no-border {border: none!important;}
 
@@ -73,7 +71,11 @@ button, input, textarea {outline: none;}
 
 // color
 .bg-color-blue {background: $blue!important;}
+.bg-color-dark-blue {background: $dark-blue!important;}
 .bg-pattern-blue {background: url(../img/blue_bg.png) 0 0 no-repeat!important;}
+
+.color-white {color: #fff!important;}
+.color-light-blue {color: #5aade1!important;}
 
 // floats
 .pull-right {float: right;}
