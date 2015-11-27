@@ -57,5 +57,13 @@ $(function(){
 		numberOfMonths: 1
 	});
 	
+	// плавное подведение к контактам на странице мероприятия
+	$('.anchor').bind("click", function(e) {
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top -50
+		}, 1500);
+		e.preventDefault();
+	});
 
 });

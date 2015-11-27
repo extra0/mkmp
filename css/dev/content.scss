@@ -19,18 +19,22 @@
 		}
 	}
 	&._bg-blue {
-		background: #3964ad;
+		background: $blue;
 	}
 	
 }
 .subtitle {
 	font-size: 27px;
 	position: relative;
-	font-family: $xbold;
+	font-family: $bold;
 	display: inline-block;
 	top: -18px;
 	margin: 0;
 	text-transform: uppercase;
+	&._font-size-40 {
+		font-size: 40px;
+		line-height: 37px;
+	}
 	&-wrap {
 		border-top: 1px solid;
 		border-color: #bfbfbf;
@@ -59,6 +63,20 @@
 				background: $blue;
 			}
 		}
+		&._color-black {
+			border-color: #000;
+			.subtitle {
+				color: #000;
+				background: #fff;
+			}
+		}
+		&._color-red {
+			border-color: #000;
+			.subtitle {
+				color: #e9301b;
+				background: #fff;
+			}
+		}
 	}
 }
 
@@ -70,7 +88,7 @@
 		padding:32px 25px 25px 25px;
 		background: #fff;
 		margin-bottom: 10px;
-		@include clearfix;
+		// @include clearfix;
 	}
 }
 /* блок справа от слайдера */
@@ -284,6 +302,13 @@
 	}
 	&._font-size-28 {
 		font-size: 28px;
+	}
+	&._font-size-31 {
+		font-size: 31px;
+	}
+	&._size-large {
+		line-height: 55px;
+		width: 330px;
 	}
 }
 #datepicker {
@@ -550,6 +575,20 @@
 		    color: $dark-blue;
 		}
 	}
+	&__input {
+		width: 100%;
+		display: block;
+		height: 45px;
+		@include box-sizing(border-box);
+		font-size: 18px;
+		padding: 0 15px;
+		margin-bottom: 15px;
+		border: 1px solid #dedede;
+		@include transition(all 0.4s ease-in-out);
+		&:focus {
+			border: 1px solid $blue;
+		}
+	}
 }
 /* модальное вступления в клуб */
 #enter_club {
@@ -646,7 +685,7 @@
 			}
 		}
 		&._blue-solid-link {
-			color: #3964ad;
+			color: $blue;
 			border-bottom: 1px solid;
 			&:hover {
 				border-bottom: 1px solid transparent;
@@ -815,4 +854,172 @@
 		overflow: hidden;
 		margin: 0;
 	}
+}
+/* страница одного мероприятия */
+.main-event {
+	&__block {
+		margin-bottom: 10px;
+		position: relative;
+		background-size: cover!important;
+	}
+	&__about-speaker {
+		&-block {
+			color: #fff;
+			padding: 13px 40px;
+			@include box-sizing(border-box);
+		}
+		&-img {
+			float: left;
+			border-radius: 50%;
+			max-width: 200px;
+			max-height: 200px;
+			margin: 10px 48px 29px 0;
+			border: 10px solid #e9e9e9;
+		}
+		&-title {
+			margin: 0 0 25px 0;
+			font-size: 48px;
+			font-weight: normal;
+		}
+		&-text {
+			margin: 0 0 26px 0;
+			line-height: 22px;
+		}
+	}
+	&__attainment {
+		/* блок достижений кампании */
+		&-block {
+			text-align: center;
+			margin: 38px 0 0 0;
+		}
+	}
+	&__partner {
+		/*список партнеров*/
+		&-block {
+			text-align: center;
+			margin: 40px 0px 20px;
+		}
+		&-list {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		&-item {
+			display: inline-block;
+			width: 25%;
+			margin: 0 1.5% 40px 1.5%;
+			vertical-align: middle;
+		}
+	}
+	&__programm {
+		/* блок программы */
+		&-block {
+			min-height: 230px;
+			background: url(../img/list.png) left center no-repeat;
+			margin: 0 3%;
+		}
+	}
+	&__map-wrapper {
+		width: 100%;
+		height: 400px;
+	}
+	&__contact {
+		/* блок окнтактов */
+		&-block {
+			margin: 58px 0 23px 0;
+		}
+		&-item {
+			display: inline-block;
+			vertical-align: top;
+			width: 52%;
+			margin-left: 4%;
+			&:first-child {
+				width: 34%;
+				margin-left: 9%;
+			}
+		}
+		&-img {
+			float: left;
+			margin: -6px 10px 20px 0;
+		}
+		&-title {
+			text-transform: uppercase;
+			margin: 0;
+			font-family: $bold;
+			font-weight: normal;
+			font-size: 18px;
+		}
+		&-text {
+			font-size: 18px;
+			margin: 0;
+			display: block;
+			color: #000;
+			text-decoration: none;
+		}
+		&-email {
+			color: #e9301b;
+			text-decoration: none;
+			font-size: 18px;
+		}
+	}
+	&__registration {
+		/* блок регистрации */
+		&-block {
+			text-align: center;
+			@include box-sizing(border-box);
+			padding: 20px 40px 40px 40px; 
+		}
+		&-preview {
+			font-size: 24px;
+			margin: 0px 0 47px 0;
+			font-weight: normal;
+			padding: 0 5%;
+		}
+		&-table {
+			margin-bottom: 41px;
+			width: 100%;
+			td {
+				border: 2px solid #fff;
+				width: 50%;
+				line-height: 58px;
+			}
+			thead {
+				td {
+					background: #e4e4e4;
+					font-size: 22px;
+					text-transform: uppercase;
+				}
+			}
+			tbody {
+				td {
+					font-size: 20px;
+					background: #f3f3f3;
+				}
+			}
+			tfoot {
+				td {
+					font-size: 31px;
+					color: #fff;
+					background: #3663ad;
+				}
+			}
+		}
+		&-text {
+			font-size: 26px;
+			text-transform: uppercase;
+			margin: 11px 0 33px 0;
+		}
+	}
+}
+// карта 
+#map {
+	width: 100%;
+	height: 100%;
+}
+/* форма регистрации */
+#registration {
+	background: #f3f3f3;
+	padding: 30px;
+	width: 495px;
+	@include box-sizing(border-box);	
 }

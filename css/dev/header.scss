@@ -7,7 +7,7 @@
 	&:before {
 		content: '';
 		background: url(../img/tree.png) 0 0 no-repeat;
-		@include position(absolute, null null -326px -15px);
+		@include position(absolute, null null -310px -15px);
 		width: 444px;
 		height: 429px;
 		z-index: -1;
@@ -21,7 +21,7 @@
 	&__menu {
 		padding: 0 0 24px 0;
 		margin: 0;
-		border-bottom: 1px solid #3964ad;
+		border-bottom: 1px solid $blue;
 	}
 	&__menu-item {
 		list-style-type: none;

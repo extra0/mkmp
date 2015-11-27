@@ -4,7 +4,7 @@
     position: relative;
     z-index: 2;
 	&__info-block {
-		background: #3964ad;
+		background: $blue;
 		padding: 17px 25px 10px 25px;
 		@include box-sizing(border-box);
 	}

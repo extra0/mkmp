@@ -28,11 +28,10 @@ body {
     padding-top: 22px;
     position: relative;
     overflow: hidden;
-    // background: url(../img/tree.png) 0 0 no-repeat;
     &:before {
         content: '';
         @include position(absolute, 0 null null 0);
-        width: 38vw;
+        width: 33vw;
         background: $dark-blue;
         height: 100%;
         z-index: -1;
@@ -44,8 +43,12 @@ body {
     max-width: 1200px;
     position: relative;
     font-size: 14px;
-    margin: 0 auto;
+    // margin: 0 auto;
     @include box-sizing(border-box);
+}
+.rubl {
+    font-family: 'Rubl';
+    display: inline-block;
 }
 
 ul.list-inline { margin-left: 0; }
@@ -57,6 +60,8 @@ button, input, textarea {outline: none;}
 //  extra classies
 .full-width {width: 100%;}
 
+.no-border {border: none!important;}
+
 // spaces
 .no-margin {margin: 0!important;}
 .margin-40-0 {margin: 40px 0;}
@@ -64,10 +69,15 @@ button, input, textarea {outline: none;}
 
 // align
 .text-center {text-align: center;}
+.text-uppercase {text-transform: uppercase;}
 
 // color
 .bg-color-blue {background: $blue!important;}
+.bg-pattern-blue {background: url(../img/blue_bg.png) 0 0 no-repeat!important;}
 
 // floats
 .pull-right {float: right;}
 .pull-left {float: left;}
+
+// fonts
+.font-normal {font-weight: normal;font-family: $main_font;}
