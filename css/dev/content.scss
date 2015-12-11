@@ -1314,3 +1314,123 @@
 		}
 	}
 }
+/* сайтбар списка новостей */
+.news-sidebar {
+	&__section {
+		width: 285px;
+		float: right;
+	}
+	&__title {
+		color: #fff;
+		text-align: center;
+		font-size: 22px;
+		margin: 0;
+		font-family: $bold;
+		background: #3964ad;
+		position: relative;
+		line-height: 65px;
+		&:after {
+			content: '';
+			@include box-sizing(border-box);
+			@include position(absolute, null null -8px -3px);
+			border-left: 140px solid transparent;
+		    border-right: 140px solid transparent;
+		    border-top: 8px solid #3964ad;
+			width: 0;
+			height: 0;
+		}
+	}
+	&__list {
+		background: #f0f0f0;
+		padding: 35px 10px 1px 10px;
+		margin: -15px 0 10px 0;
+		list-style-type: none;
+	}
+	&__item {
+		padding: 0 15px 10px 15px;
+		border-bottom: 1px solid #d6d6d6;
+		margin-bottom: 15px;
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 5px;
+		}
+	}
+	&__date {
+		font-size: 11px;
+		font-style: italic;
+		margin: 0; 
+	}
+	&__link {
+		text-decoration: none;
+		color: #3964ad;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__more-link {
+		background: #e9301b;
+		display: block;
+		color: #fff;
+		line-height: 50px;
+		text-decoration: none;
+		font-family: $bold;
+		text-align: center;
+		font-size: 21px;
+		@include transition(all 0.4s ease-in-out);
+		&:hover {
+			background: darken(#e9301b, 7%);
+		}
+	}
+}
+/* текстовый блок со статьями и новостями */
+.text-block {
+	&__section {
+		font-size: 13px;
+		&.no-right-sidebar {
+			margin-right: 0;
+		}
+		margin-right: 315px;
+		@include clearfix;
+		p {
+			margin: 0 0 15px 0;
+		}
+		ul {
+			list-style-type: none;
+		}
+		ol li {
+			margin-bottom: 10px;
+		}
+		ul li {
+			margin-bottom: 10px;
+			position: relative;
+			&:before {
+				content: '';
+				@include position(absolute, 6px null null -15px);
+				width: 6px;
+				height: 6px;
+				background: $blue;
+				border-radius: 50%; 
+			}
+		}
+	}
+	&__date {
+		color: #fff;
+		display: inline-block;
+		margin: 0;
+		font-size: 12px;
+		padding: 3px 10px;
+		background: #3964ad;
+	}
+	&__main-img {
+		display: block;
+		margin: 0 0 40px 0;
+	}
+	&__title {
+		font-size: 30px;
+		line-height: 32px;
+		color: #3964ad;
+		margin: 0 0 30px 0;
+		font-weight: normal;
+	}
+	
+}
