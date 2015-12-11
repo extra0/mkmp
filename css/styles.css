@@ -1422,6 +1422,26 @@ button, input, textarea {
   margin: 4px 0 0 0;
   font-size: 12px;
 }
+.case__inner-img {
+  max-width: 245px;
+  float: left;
+}
+.case__title {
+  margin: 0;
+  font-weight: normal;
+  color: #3964ad;
+  font-size: 24px;
+}
+.case__text-block {
+  position: relative;
+  z-index: 1;
+  margin-left: 275px;
+}
+.case__text-block > p, .case__text-block li {
+  color: #646464;
+  margin: 4px 0 20px 0;
+  font-size: 14px;
+}
 
 .modal {
   display: none;
@@ -1649,6 +1669,55 @@ button, input, textarea {
 }
 .pagination__item {
   display: inline-block;
+}
+.pagination__changer {
+  display: inline-block;
+  position: relative;
+  color: #5aade1;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 10%;
+  -webkit-transition: color 0.4s ease-in-out;
+  -moz-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+.pagination__changer:hover {
+  color: #85c2e9;
+}
+.pagination__changer.prev:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  background: url(../img/pag_arrow.png) 0 0 no-repeat;
+  width: 10px;
+  height: 17px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.pagination__changer.prev:hover:before {
+  left: -25px;
+}
+.pagination__changer.next:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: -20px;
+  background: url(../img/pag_arrow.png) 0 0 no-repeat;
+  width: 10px;
+  height: 17px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.pagination__changer.next:hover:before {
+  right: -25px;
 }
 
 /* блок смены категории в галереи*/

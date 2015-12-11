@@ -623,6 +623,26 @@
 		margin: 4px 0 0 0;
 		font-size: 12px;
 	}
+	&__inner-img {
+		max-width: 245px;
+		float: left;
+	}
+	&__title {
+		margin: 0;
+		font-weight: normal;
+		color: #3964ad;
+		font-size: 24px;
+	}
+	&__text-block {
+		position: relative;
+		z-index: 1;
+		margin-left: 275px;
+		& > p, li {
+			color: #646464;
+			margin: 4px 0 20px 0;
+			font-size: 14px;
+		}
+	}
 }
 // модальные окна
 .modal {
@@ -851,6 +871,49 @@
 	}
 	&__item {
 		display: inline-block;
+	}
+	&__changer {
+		display: inline-block;
+		position: relative;
+		color: #5aade1;
+		font-size: 18px;
+		text-decoration: none;
+		margin: 0 10%;
+		@include transition(color 0.4s ease-in-out);
+		&:hover {
+			color: lighten(#5aade1, 10%);
+		}
+		&.prev {
+			&:before {
+				content: '';
+				@include position(absolute, 3px null null -20px);
+				background: url(../img/pag_arrow.png) 0 0 no-repeat;
+				width: 10px;
+				height: 17px;
+				@include transform(rotate(180deg));
+				@include transition(all 0.4s ease-in-out);
+			}
+			&:hover {
+				&:before {
+					left: -25px;
+				}
+			}
+		}
+		&.next {
+			&:before {
+				content: '';
+				@include position(absolute, 3px -20px null null);
+				background: url(../img/pag_arrow.png) 0 0 no-repeat;
+				width: 10px;
+				height: 17px;
+				@include transition(all 0.4s ease-in-out);
+			}
+			&:hover {
+				&:before {
+					right: -25px;
+				}
+			}
+		}
 	}
 }
 /* блок смены категории в галереи*/
