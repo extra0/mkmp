@@ -997,6 +997,9 @@
 			min-height: 230px;
 			background: url(../img/list.png) left center no-repeat;
 			margin: 0 3%;
+			img {
+				margin: 20px 0 20px 32%;
+			}
 		}
 	}
 	&__map-wrapper {

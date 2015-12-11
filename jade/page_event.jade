@@ -32,8 +32,8 @@ block content
 	.content-inner.bg-color-blue
 		.subtitle-wrap._position-center._color-white
 			h2.subtitle._font-size-40 программа
-			.main-event__programm-block
-				ul.main-event__proggramm-list
+		.main-event__programm-block
+			img(src="img/programm.png", alt="")
 	.content-inner
 		.subtitle-wrap._position-center._color-black#contact_anchor
 			h2.subtitle._font-size-40 контакты
@@ -53,7 +53,6 @@ block content
 			script.
 				$(function(){
 					ymaps.ready(init);
-
 					function init() {
 					    var myMap = new ymaps.Map('map', {
 					        center: [55.753994, 37.622093],
