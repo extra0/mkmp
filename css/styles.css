@@ -2086,6 +2086,23 @@ button, input, textarea {
 .contact__text span {
   font-size: 16px;
 }
+.contact__blockquote {
+  color: #fff;
+  margin-top: 40px;
+  background: #3964ad;
+  padding: 26px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contact__blockquote span {
+  font-size: 13px;
+}
+.contact__blockquote p {
+  font-size: 16px;
+  margin: 10px 0 0 0;
+}
 
 /* цели и задачи */
 .task__block {
