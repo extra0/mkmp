@@ -795,6 +795,52 @@
 	&__link-wrap {
 		margin-bottom: 17px;
 	}
+	&__person-wrap {
+		max-width: 205px;
+		text-align: center;
+		float: left;
+		.leadership__img {
+			max-width: 205px;
+			max-height: 205px;
+		}
+	}
+	&__person-title {
+		color: #3964ad;
+		display: inline-block;
+		margin: 20px 0 0 0;
+		font-size: 16px;
+	}
+	&__person-date {
+		font-size: 13px;
+		color: #000;
+		margin: 0;
+	}
+	&__detail-description {
+		margin-left: 260px;
+		ul {
+			list-style-type: none;
+			margin-bottom: 40px;
+		}
+		ul li {
+			font-size: 13px;
+			margin-bottom: 10px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 4px;
+				left: -19px;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				background: #5aade1;
+			}
+		}
+		p {
+			font-size: 13px;
+			margin: 10px 0 10px 25px;
+		}
+	}
 }
 
 /* фильтр по дате */
@@ -1307,8 +1353,8 @@
 		@include display(flex);
 		@include align-items(center);
 		font-weight: normal;
-		font-size: 24px;
-		margin: 34px 0 -5px 0;
+		font-size: 24px!important;
+		margin: 34px 0 -5px 0!important;
 		img {
 			margin-right: 15px;
 		}

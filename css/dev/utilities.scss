@@ -49,6 +49,9 @@ body {
     font-family: 'Rubl';
     display: inline-block;
 }
+.clearfix {
+    @include clearfix;
+}
 
 label { font-weight: normal;}
 img {max-width: 100%;}
