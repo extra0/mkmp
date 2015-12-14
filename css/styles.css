@@ -167,6 +167,10 @@ button, input, textarea {
   font-family: "PFSquareSansPro-Regular", sans-serif;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .fancybox-image,
 .fancybox-inner,
 .fancybox-nav,
@@ -2342,6 +2346,74 @@ button, input, textarea {
   color: #3964ad;
   margin: 0 0 30px 0;
   font-weight: normal;
+}
+
+/*страница партнеров*/
+.partner__section {
+  position: relative;
+  margin-bottom: 80px;
+}
+.partner__section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1px;
+  height: 100%;
+  background: #dfdfdf;
+}
+.partner__block {
+  margin-bottom: 40px;
+}
+.partner__block::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.partner__block p {
+  font-size: 13px;
+  line-height: 19px;
+  margin: 0 0 7px 0;
+}
+.partner__block img {
+  float: left;
+  margin: 0 20px 5px 0;
+}
+.partner__img-wrap {
+  width: 150px;
+  float: left;
+  display: inline-block;
+  margin: 0 20px 20px 0;
+}
+.partner__name {
+  color: #e9301b;
+}
+.partner__half-section {
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.partner__half-section:nth-child(2n) {
+  float: right;
+}
+.partner__title {
+  margin: 0 0 10px 0 !important;
+  font-size: 18px !important;
+  font-family: "PFSquareSansPro-Medium" !important;
+}
+.partner__detail-link {
+  color: #e9301b;
+  display: inline-block;
+  line-height: 22px;
+  font-size: 19px;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+.partner__detail-link:hover {
+  border-bottom: 1px solid transparent;
 }
 
 .footer {

@@ -1480,3 +1480,68 @@
 	}
 	
 }
+/*страница партнеров*/
+.partner {
+	&__section {
+		position: relative;
+		margin-bottom: 80px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			width: 1px;
+			height: 100%;
+			background: #dfdfdf;
+		}
+	}
+	&__block {
+		margin-bottom: 40px;
+		@include clearfix;
+		p {
+			font-size: 13px;
+			line-height: 19px;
+			margin: 0 0 7px 0;
+		}
+		img {
+			float: left;
+			margin: 0 20px 5px 0;
+		}
+	}
+	&__img-wrap {
+		width: 150px;
+		float: left;
+		display: inline-block;
+		margin: 0 20px 20px 0;
+	}
+	&__name {
+		color: #e9301b;
+	}
+	&__half-section {
+		width: 47%;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		&:nth-child(2n) {
+			float: right;
+		}
+	}
+	&__title {
+		margin: 0 0 10px 0!important;
+		font-size: 18px!important;
+		font-family: $med!important;
+	}
+	&__detail-link {
+		color: #e9301b;
+		display: inline-block;
+		line-height: 22px;
+		font-size: 19px;
+		text-decoration: none;
+		border-bottom: 1px dashed;
+		&:hover {
+			border-bottom: 1px solid transparent;
+		}
+	}
+}
