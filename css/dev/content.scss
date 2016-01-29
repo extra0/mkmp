@@ -21,6 +21,14 @@
 	&._bg-blue {
 		background: $blue;
 	}
+	&._font-normal {
+		font-size: 50px;
+		font-family: $main_font;
+		padding: 0 35px;
+		text-transform: none;
+		margin: 50px 0;
+		font-weight: normal;
+	}
 	
 }
 .subtitle {
@@ -568,6 +576,59 @@
 		&:hover {
 			.event__text {
 				color: #f3953f;
+			}
+		}
+	}
+	&-left-sidebar {
+		float: left;
+		&__block {
+			width: 208px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			text-align: center;
+			padding: 20px 10px 30px;
+			&._date {
+				background: #3964ad url(../img/time.png) -25px 20px no-repeat;
+			}
+			&._location {
+				background: #3964ad url(../img/adress.png) -25px 20px no-repeat;
+			}
+		}
+		&__title {
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 18px;
+			margin: 0;
+			font-family: $bold;
+		}
+		&__text {
+			color: #fff;
+			margin: 0;
+			font-size: 15px;
+		}
+		&__date {
+			font-family: $light;
+			color: #fff;
+			margin: 7px 0;
+			text-transform: uppercase;
+			font-size: 32px;
+		}
+		&__place {
+			@extend .event-left-sidebar__date;
+			font-size: 24px;
+		}
+		&__link {
+			display: block;
+			text-align: center;
+			background: $red;
+			font-size: 21px;
+			font-family: $bold;
+			text-decoration: none;
+			padding: 15px 0;
+			color: #fff;
+			@include transition(all 0.4s ease-in-out);
+			&:hover {
+				background: lighten($red, 5%);
 			}
 		}
 	}
@@ -1169,6 +1230,10 @@
 			margin: 0px 0 47px 0;
 			font-weight: normal;
 			padding: 0 5%;
+			a {
+				color: $red;
+				text-decoration: none;
+			}
 		}
 		&-table {
 			margin-bottom: 41px;
@@ -1461,6 +1526,9 @@
 				border-radius: 50%; 
 			}
 		}
+		&.margin-left-sidebar {
+			margin: 0 0 0 250px;
+		}
 	}
 	&__date {
 		color: #fff;
@@ -1620,3 +1688,35 @@
 	}
 }
 /* конец css страницы прошлых событий */
+/* css для страницы с мероприятие без даты */
+.consultation {
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		margin: 30px 0;
+		text-align: center;
+	}
+	&__item {
+		width: 40%;
+		margin: 0 3%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__img {
+		max-width: 170px;
+		max-height: 170px;
+		border-radius: 50%;
+	}
+	&__name {
+		font-size: 21px;
+		color: #fff;
+		margin-bottom: 0;
+		font-family: $bold;
+	}
+	&__text {
+		color: #fff;
+		font-size: 13px;
+		line-height: 14px;
+		padding: 0 20px;
+	}
+}

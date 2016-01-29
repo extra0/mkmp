@@ -1,0 +1,102 @@
+extends _layout
+block content
+	.content-inner
+		h2.title._color-white.text-center._bg-blue Мероприятия
+		h1.title.text-center._font-normal Консультация по SWOT-анализу для Действительных членов Клуба Молодых Предпринимателей
+		.event-left-sidebar
+			.event-left-sidebar__block._date
+				p.event-left-sidebar__title Дата
+				p.event-left-sidebar__date 22 апреля   
+				p.event-left-sidebar__text с 19:00 до 22:00
+			.event-left-sidebar__block._location
+				p.event-left-sidebar__title место
+				p.event-left-sidebar__place Клуб-ресторан «ArteFaq»
+				p.event-left-sidebar__text г. Москва, ул. Большая Дмитровка, д.32, стр.1
+			a.event-left-sidebar__link(href="#") Все мероприятия
+		.text-block__section.margin-left-sidebar
+			p Один день в неделю консультанты и коучи компании «Эксити группа» оказывают профессиональные консультации Действительным членам Клуба Молодых Предпринимателей по SWOT-анализу. 
+			p SWOT-анализ позволяет определить причины эффективной или неэффективной работы компании на рынке, это сжатый анализ маркетинговой информации на основании которого делается вывод о том, в каком направлении организация должна развивать свой бизнес и в конечном итоге определяется распределение ресурсов по сегментам. Результатом анализа является разработка маркетинговой стратегии или гипотезы для дальнейшей проверки.
+			p Также SWOT–анализ предполагает определение сильных и слабых сторон в деятельности фирмы, потенциальных внешних угроз и благоприятных возможностей и их оценку относительно стратегически важных конкурентов.
+			p Для Действительных членов Клуба МП консультации являются бесплатными.
+			p
+				strong Квоты:
+			ul
+				li на одну консультацию не более 1,5-2 часов
+	.content-inner.bg-color-blue
+		.subtitle-wrap._position-center._color-white
+			h2.subtitle._font-size-40 Консультации ведут
+			ul.consultation__list
+				li.consultation__item
+					img.consultation__img(src="/img/content/big_ava.jpg", alt="")
+					p.consultation__name Андрей Вахин
+					p.consultation__text Управляющий партнер,<br>Генеральный директор компании<br>"Эксити группа".<br>Ведущий консультант<br>(ICMCI),<br>коуч (ECF, ICF), бизнестренер (WLW)
+				li.consultation__item
+					img.consultation__img(src="/img/content/big_ava.jpg", alt="")
+					p.consultation__name Алена Сосновская
+					p.consultation__text Сертифицированный консультант по управлению (СМС) по стандарту ICMCI; Сертифицированный налитик в области поведения человека (СРВА, CPVA)
+	.content-inner
+		.subtitle-wrap._position-center._color-black
+			h2.subtitle._font-size-40 контакты
+		.main-event__contact-block
+			.main-event__contact-item
+				img.main-event__contact-img(src="img/cont_1.png", alt="")
+				p.main-event__contact-title Панченко Дарья
+				a.main-event__contact-text(href="tel:+79161457356") +7(916) 145 73 56
+				a.main-event__contact-email(href="mailto:dasha@mosmp.ru") dasha@mosmp.ru 
+			.main-event__contact-item
+				img.main-event__contact-img(src="img/cont_2.png", alt="")
+				p.main-event__contact-title Клуб-ресторан «ArteFaq»
+				p.main-event__contact-text ул. Большая Дмитровка, д.32, стр.1
+				p.main-event__contact-text (вход через арку)
+		.main-event__map-wrapper
+			script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+			script.
+				$(function(){
+					ymaps.ready(init);
+					function init() {
+					    var myMap = new ymaps.Map('map', {
+					        center: [55.753994, 37.622093],
+					        zoom: 14,
+					        controls: []
+					    });
+
+					    ymaps.geocode('Украина, Донецк', {
+					        results: 1
+					    }).then(function (res) {
+					            // Выбираем первый результат геокодирования.
+					            var firstGeoObject = res.geoObjects.get(0),
+					                // Координаты геообъекта.
+					                coords = firstGeoObject.geometry.getCoordinates(),
+					                // Область видимости геообъекта.
+					                bounds = firstGeoObject.properties.get('boundedBy');
+
+					            // Добавляем первый найденный геообъект на карту.
+					            myMap.geoObjects.add(firstGeoObject);
+					            // Масштабируем карту на область видимости геообъекта.
+					            myMap.setBounds(bounds, {
+					                // Проверяем наличие тайлов на данном масштабе.
+					                checkZoomRange: true
+					            });
+					        });
+					        //- MapPlaces.behaviors.disable('scrollZoom');
+					}
+				});
+			#map
+	.content-inner
+		.subtitle-wrap._position-center._color-red
+			h2.subtitle._font-size-40 регистрация
+		.main-event__registration-block
+			p.main-event__registration-preview Для участия в консультации вам необходимо пройти регистрацию ниже. Или отправить заявку на <a href="mailto:dasha@mosmp.ru">dasha@mosmp.ru</a>. В заявке необходимо указать ФИО, контактный телефон. Либо связаться с Вашим персональным менеджером в Клубе Молодых Предпринимателей.
+			img(src="img/reg_img.png", alt="")
+			p.main-event__registration-text Количество мест ограничено!
+			a.btn._font-size-31._size-large.fancybox(href="#registration") Регистрация
+			// форма регистрации
+			.modal#registration
+				form(action="#")
+					input.modal__input(type="text" placeholder="Имя")
+					input.modal__input(type="text" placeholder="Фамилия")
+					input.modal__input(type="email" placeholder="E-mail")
+					input.modal__input.mask(type="text" placeholder="Телефон")
+					input.modal__input(type="text" placeholder="Компания")
+					.text-center
+						button.btn(type="submit") Зарегистрироваться

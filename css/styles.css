@@ -749,6 +749,14 @@ button, input, textarea {
 .title._bg-blue {
   background: #3a63ac;
 }
+.title._font-normal {
+  font-size: 50px;
+  font-family: "PFSquareSansPro-Regular", sans-serif;
+  padding: 0 35px;
+  text-transform: none;
+  margin: 50px 0;
+  font-weight: normal;
+}
 
 .subtitle {
   font-size: 27px;
@@ -1383,6 +1391,60 @@ button, input, textarea {
 }
 .event__link:hover .event__text {
   color: #f3953f;
+}
+.event-left-sidebar {
+  float: left;
+}
+.event-left-sidebar__block {
+  width: 208px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 20px 10px 30px;
+}
+.event-left-sidebar__block._date {
+  background: #3964ad url(../img/time.png) -25px 20px no-repeat;
+}
+.event-left-sidebar__block._location {
+  background: #3964ad url(../img/adress.png) -25px 20px no-repeat;
+}
+.event-left-sidebar__title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  font-family: "PFSquareSansPro-Bold";
+}
+.event-left-sidebar__text {
+  color: #fff;
+  margin: 0;
+  font-size: 15px;
+}
+.event-left-sidebar__date, .event-left-sidebar__place {
+  font-family: "PFSquareSansPro-Light";
+  color: #fff;
+  margin: 7px 0;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+.event-left-sidebar__place {
+  font-size: 24px;
+}
+.event-left-sidebar__link {
+  display: block;
+  text-align: center;
+  background: #e9301b;
+  font-size: 21px;
+  font-family: "PFSquareSansPro-Bold";
+  text-decoration: none;
+  padding: 15px 0;
+  color: #fff;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.event-left-sidebar__link:hover {
+  background: #eb4532;
 }
 
 /* блок кейсов на главной */
@@ -2020,6 +2082,10 @@ button, input, textarea {
   font-weight: normal;
   padding: 0 5%;
 }
+.main-event__registration-preview a {
+  color: #e9301b;
+  text-decoration: none;
+}
 .main-event__registration-table {
   margin-bottom: 41px;
   width: 100%;
@@ -2336,6 +2402,9 @@ button, input, textarea {
   background: #3a63ac;
   border-radius: 50%;
 }
+.text-block__section.margin-left-sidebar {
+  margin: 0 0 0 250px;
+}
 .text-block__date {
   color: #fff;
   display: inline-block;
@@ -2514,6 +2583,37 @@ button, input, textarea {
 }
 
 /* конец css страницы прошлых событий */
+/* css для страницы с мероприятие без даты */
+.consultation__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0;
+  text-align: center;
+}
+.consultation__item {
+  width: 40%;
+  margin: 0 3%;
+  display: inline-block;
+  vertical-align: top;
+}
+.consultation__img {
+  max-width: 170px;
+  max-height: 170px;
+  border-radius: 50%;
+}
+.consultation__name {
+  font-size: 21px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: "PFSquareSansPro-Bold";
+}
+.consultation__text {
+  color: #fff;
+  font-size: 13px;
+  line-height: 14px;
+  padding: 0 20px;
+}
+
 .footer {
   margin-left: 240px;
   clear: both;
