@@ -759,6 +759,9 @@ button, input, textarea {
   margin: 0;
   text-transform: uppercase;
 }
+.subtitle._regular {
+  font-family: "PFSquareSansPro-Regular", sans-serif;
+}
 .subtitle._font-size-40 {
   font-size: 40px;
   line-height: 37px;
@@ -815,6 +818,11 @@ button, input, textarea {
   padding: 32px 25px 25px 25px;
   background: #fff;
   margin-bottom: 10px;
+}
+.content-inner::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 /* блок справа от слайдера */
@@ -2416,6 +2424,96 @@ button, input, textarea {
   border-bottom: 1px solid transparent;
 }
 
+/* css страницы прошлых событий */
+.past-event__section {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  position: relative;
+  margin: 40px 0;
+}
+.past-event__section:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #bfbfbf;
+  margin: 0 auto;
+}
+.past-event__block {
+  width: 50%;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+.past-event__block:nth-child(even) {
+  padding-left: 30px;
+}
+.past-event__block:nth-child(odd) {
+  padding-right: 30px;
+}
+.past-event__block:nth-last-child(1), .past-event__block:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.past-event__date {
+  width: 50px;
+  float: left;
+}
+.past-event__number, .past-event__month {
+  font-family: "PFSquareSansPro-Medium";
+  font-size: 29px;
+  color: #6d6d6d;
+  display: block;
+  line-height: normal;
+  text-align: right;
+}
+.past-event__month {
+  font-size: 12px;
+  margin-top: -5px;
+  text-transform: uppercase;
+}
+.past-event__description {
+  margin-left: 65px;
+}
+.past-event__link {
+  color: #3963ab;
+  font-family: "PFSquareSansPro-Medium";
+  text-decoration: none;
+}
+.past-event__link:hover {
+  text-decoration: underline;
+  color: #3f6ebe;
+}
+.past-event__text {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  color: #2c2c2c;
+  line-height: 16px;
+}
+
+/* конец css страницы прошлых событий */
 .footer {
   margin-left: 240px;
   clear: both;

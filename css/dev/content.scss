@@ -31,6 +31,9 @@
 	top: -18px;
 	margin: 0;
 	text-transform: uppercase;
+	&._regular {
+		font-family: $main_font;
+	}
 	&._font-size-40 {
 		font-size: 40px;
 		line-height: 37px;
@@ -89,7 +92,7 @@
 		padding:32px 25px 25px 25px;
 		background: #fff;
 		margin-bottom: 10px;
-		// @include clearfix;
+		@include clearfix;
 	}
 }
 /* блок справа от слайдера */
@@ -1545,3 +1548,75 @@
 		}
 	}
 }
+
+
+/* css страницы прошлых событий */
+.past-event {
+	&__section {
+		@include display(flex);
+		@include flex-wrap(wrap);
+		@include justify-content(space-between);
+		position: relative;
+		margin: 40px 0;
+		&:after {
+			content: '';
+			@include position(absolute, 0 0 null 0);
+			width: 1px;
+			height: 100%;
+			background: #bfbfbf;
+			margin: 0 auto;
+		}
+	}
+	&__block {
+		width: 50%;
+		margin-bottom: 40px;
+		box-sizing: border-box;
+		&:nth-child(even) {
+			padding-left: 30px;
+		}
+		&:nth-child(odd) {
+			padding-right: 30px;
+		}
+		&:nth-last-child(1),
+		&:nth-last-child(2) {
+			margin-bottom: 0;
+		}
+	}
+	&__date {
+		width: 50px;
+		float: left;
+	}
+	&__number {
+		font-family: $med;
+		font-size: 29px;
+		color: #6d6d6d;
+		display: block;
+		line-height: normal;
+		text-align: right;
+	}
+	&__month {
+		@extend .past-event__number;
+		font-size: 12px;
+		margin-top: -5px;
+		text-transform: uppercase;
+	}
+	&__description {
+		margin-left: 65px;
+	}
+	&__link {
+		color: #3963ab;
+		font-family: $med;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+			color: lighten(#3963ab, 5%);
+		}
+	}
+	&__text {
+		margin: 5px 0 0 0;
+		font-size: 13px;
+		color: #2c2c2c;
+		line-height: 16px;
+	}
+}
+/* конец css страницы прошлых событий */
