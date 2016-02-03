@@ -1178,15 +1178,19 @@ button, input, textarea {
 }
 .date-event__item {
   width: 29.7%;
-  margin-left: 3.3%;
+  margin-left: 3.2%;
   margin-bottom: 26px;
   display: inline-block;
   vertical-align: top;
   position: relative;
+  background: #dfe3eb;
 }
-.date-event__item:hover .date-event__info-block {
-  opacity: 0;
-  z-index: -1;
+.date-event__item:hover .date-event__bg-img {
+  opacity: 1;
+  z-index: 1;
+}
+.date-event__item a {
+  text-decoration: none;
 }
 .date-event__info-block {
   opacity: 1;
@@ -1194,18 +1198,9 @@ button, input, textarea {
   height: 100%;
   padding: 13px 20px 13px 28px;
   z-index: 1;
-  background: #dfe3eb;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
 }
 .date-event__number {
   font-family: "PFSquareSansPro-Medium";
@@ -1230,6 +1225,28 @@ button, input, textarea {
   width: 100%;
   min-height: 135px;
   background-size: cover !important;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 13px 20px 13px 28px;
+  z-index: -1;
+  background: #dfe3eb;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.date-event__text {
+  font-size: 13px;
+  color: #000;
+  line-height: 14px;
 }
 
 .banner__block {
@@ -2581,6 +2598,20 @@ button, input, textarea {
   color: #2c2c2c;
   line-height: 16px;
 }
+.past-event__all-link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  background: #e9301b;
+  padding: 15px 25px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.past-event__all-link:hover {
+  background: #eb4532;
+}
 
 /* конец css страницы прошлых событий */
 /* css для страницы с мероприятие без даты */
@@ -2612,6 +2643,35 @@ button, input, textarea {
   font-size: 13px;
   line-height: 14px;
   padding: 0 20px;
+}
+
+/* аккордион */
+.accordion__title {
+  color: #626262;
+  font-size: 20px;
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.accordion__title:hover, .accordion__title.active {
+  background: #3964ad !important;
+  color: #fff;
+}
+.accordion__block:nth-child(even) .accordion__title {
+  background: #dfe2e9;
+}
+.accordion__block:nth-child(odd) .accordion__title {
+  background: #e9ecf1;
+}
+.accordion__text-block {
+  display: none;
+  padding: 0 20px;
+}
+.accordion__section {
+  margin: 70px 0 40px 0;
 }
 
 .footer {

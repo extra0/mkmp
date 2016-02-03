@@ -415,16 +415,20 @@
 	}
 	&__item {
 		width: 29.7%;
-	    margin-left: 3.3%;
+	    margin-left: 3.2%;
 	    margin-bottom: 26px;
 	    display: inline-block;
 	    vertical-align: top;
 	    position: relative;
+	    background: #dfe3eb;
 		&:hover {
-			.date-event__info-block {
-				opacity: 0;
-				z-index: -1;
+			.date-event__bg-img {
+				opacity: 1;
+				z-index: 1;
 			}
+		}
+		a {
+			text-decoration: none;
 		}
 	}
 	&__info-block {
@@ -433,10 +437,7 @@
 		height: 100%;
 		padding: 13px 20px 13px 28px;
 		z-index: 1;
-		background: #dfe3eb;
 		@include box-sizing(border-box);
-		@include position(absolute, 0 0 0 0);
-		@include transition(all 0.4s ease-in-out);
 	}
 	&__number {
 		font-family: $med;
@@ -461,6 +462,20 @@
 		width: 100%;
 		min-height: 135px;
 		background-size: cover!important;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		padding: 13px 20px 13px 28px;
+		z-index: -1;
+		background: #dfe3eb;
+		@include box-sizing(border-box);
+		@include position(absolute, 0 0 0 0);
+		@include transition(all 0.4s ease-in-out);
+	}
+	&__text {
+		font-size: 13px;
+		color: #000;
+		line-height: 14px;
 	}
 }
 // длинный баннер 
@@ -1686,6 +1701,18 @@
 		color: #2c2c2c;
 		line-height: 16px;
 	}
+	&__all-link {
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 25px;
+		background: $red;
+		padding: 15px 25px;
+		@include transition(all 0.4s ease-in-out);
+		&:hover {
+			background: lighten($red, 5%);
+		}
+	}
 }
 /* конец css страницы прошлых событий */
 /* css для страницы с мероприятие без даты */
@@ -1718,5 +1745,41 @@
 		font-size: 13px;
 		line-height: 14px;
 		padding: 0 20px;
+	}
+}
+/* аккордион */
+.accordion {
+	&__title {
+		color: #626262;
+		font-size: 20px;
+		display: block;
+		padding: 5px 20px;
+		text-decoration: none;
+		@include transition(all 0.4s ease-in-out);
+		&:hover,
+		&.active {
+			background: #3964ad!important;
+			color: #fff;
+		}
+	}
+	&__block {
+		&:nth-child(even) {
+			.accordion__title {
+				background: #dfe2e9;
+			}
+		}
+		&:nth-child(odd) {
+			.accordion__title {
+				background: #e9ecf1;
+			}
+		}
+	}
+	&__text-block {
+		display: none;
+		// margin-bottom: 10px;
+		padding: 0 20px;
+	}
+	&__section {
+		margin: 70px 0 40px 0;
 	}
 }

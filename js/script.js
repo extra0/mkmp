@@ -66,4 +66,17 @@ $(function(){
 		e.preventDefault();
 	});
 
+	// реализация аккордиона
+	$('.accordion__title').click(function(){
+		if ($(this).hasClass('active')) {
+			$(this).next().slideUp(400);
+			$(this).removeClass('active');	
+		} else {
+			$('.accordion__title').removeClass('active');
+			$('.accordion__text-block').slideUp(400);
+			$(this).addClass('active');
+			$(this).next().slideDown(400);	
+		}
+	});
+
 });
