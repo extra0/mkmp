@@ -1,0 +1,60 @@
+extends _layout
+block content
+	.content-inner
+		h1.title._color-white.text-center._bg-blue Бизнес-десант
+		br
+		br
+		.closest-event
+			.closest-event__block
+				p.closest-event__title Ближайшее мероприятие
+				.closest-event__inner
+					p.closest-event__strong-text когда:
+					p.closest-event__text.text-uppercase 22 апреля
+					p.closest-event__text с 19:00 до 22:00
+				.closest-event__inner
+					p.closest-event__strong-text где:
+					p.closest-event__text.text-uppercase Клуб-ресторан «ArteFaq»
+					p.closest-event__text г. Москва, ул. Большая Дмитровка, д.32, стр.1
+			a.closest-event__btn.fancybox(href="#registration") Зарегистрироваться
+			// форма регистрации
+			.modal#registration
+				form(action="#")
+					input.modal__input(type="text" placeholder="Имя")
+					input.modal__input(type="text" placeholder="Фамилия")
+					input.modal__input(type="email" placeholder="E-mail")
+					input.modal__input.mask(type="text" placeholder="Телефон")
+					input.modal__input(type="text" placeholder="Компания")
+					.text-center
+						button.btn(type="submit") Зарегистрироваться
+		.text-block__section.no-margin
+			p В бизнесе иногда важны не инвестиции, как думают многие, а честная оценка бизнеса и совет от человека, который уже имеет предпринимательский опыт и знает, как можно решить те или иные проблемы.
+			p Постоянно находясь внутри бизнеса, вы можете не увидеть новых точек роста или задач, которые необходимо решить.
+			p Хотя на самом деле, очень часто, достаточно просто позвать кого-нибудь со стороны. Кто может трезво взглянуть на ситуацию. Кто, пройдя по пути ваших бизнес-процессов, покажет вам узкие места, недоработки, в которых ваш бизнес теряет прибыль.
+			div <span class="blue-title">«Бизнес-десант»</span> - это погружение в ваш бизнес других предпринимателей на три дня!
+			div <span class="blue-title">«Бизнес-десант»</span> - это возможность посмотреть на бизнес извне!
+			div <span class="blue-title">«Бизнес-десант» для тех:</span>
+			ul
+				li кто хочет найти новые точки роста в своем бизнесе
+				li получить оценку и практический взгляд со стороны других предпринимателей
+				li открыть новые возможности для масштабирования и роста
+			.blue-title Участники:
+			p Принять участие в проекте могут только Действительные члены Клуба Молодых Предпринимателей.
+			br
+			img(src="img/content/desant.jpg", alt="desant" style="float: left; margin: 0 20px 20px 0")
+			.blue-title Формы участия:
+			p Вы можете выступить как в качестве участника, так и предпринимателя-эксперта.
+			p <strong>Участник</strong> – предприниматель, который хочет получить оценку своего бизнеса другими предпринимателями.
+			p <strong>Эксперты</strong> – анализируют бизнес участника.
+			.blue-title Модератор
+			p <strong>ЕСКИН ДМИТРИЙ</strong> - специалист по маркетингу и рекламе. Разработал более 100 фирменных стилей и логотипов, проконсультировал более 500 российских и зарубежных компаний по вопросам создания, использования, применения и использования корпоративного стиля. Владелец группы компаний Extrabrand Group.
+			br
+			.text-block__center-title Для получения консультации необходимо:
+			.participation
+				.participation__block
+					span.participation__text Заполнить анкету участника/эксперта и отправить на <a href="mailto:dasha@mosmp.ru">dasha@mosmp.ru</a>
+				img.participation__img(src="img/right-triangle.png", alt="triangle")
+				.participation__block
+					span.participation__text Мы согласовываем удобные для участника и экспертов время и даты
+				img.participation__img(src="img/right-triangle.png", alt="triangle")
+				.participation__block
+					span.participation__text Погружение в ваш бизнес в течение трех дней предпринимателей-экспертов

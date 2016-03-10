@@ -1880,3 +1880,46 @@
 		}
 	}
 }
+.blue-title {
+	font-size: 24px;
+	color: #1c4093;
+	font-weight: normal;
+}
+// блок с шагами участия
+.participation {
+	@include display(flex);
+	@include justify-content(space-between);
+	@include align-items(center);
+	margin-bottom: 40px;
+	&__block {
+		border: 7px solid #dcdcdc;
+	    padding: 20px;
+	    text-align: center;
+	    margin: 0 25px;
+	 //    position: relative;
+		// &:not(:last-child) {
+		// 	&:before {
+		// 		content: '';
+		// 		@include position(absolute, 33% -43px null null);
+		// 		background: url(../img/right-triangle.png) 0 0 no-repeat;
+		// 		width: 20px;
+		// 		height: 41px;
+		// 	}
+		// }
+	}
+	&__text {
+		font-size: 19px;
+		margin: 0;
+		a {
+			color: #d51212;
+			text-decoration: none;
+			border-bottom: 1px solid;
+			&:hover {
+				border-bottom: 1px solid transparent;
+			}
+		}
+	}
+	&__img {
+		width: 20px;
+	}
+}
