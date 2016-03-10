@@ -1923,3 +1923,23 @@
 		width: 20px;
 	}
 }
+// отзывы 
+.feedback {
+	margin: 15px 0 39px 0;
+	&__block {
+		border-left: 6px solid #5aade1;
+		padding: 17px 20px;
+		margin-bottom: 10px; 
+	}
+	&__author {
+		font-family: $bold;
+		font-size: 15px;
+		margin: 0 0 4px;
+	}
+	&__text {
+		font-size: 15px;
+		font-style: italic;
+		margin: 0;
+		line-height: 18px;
+	}
+}
