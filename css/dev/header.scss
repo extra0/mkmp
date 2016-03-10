@@ -1,8 +1,9 @@
 .header {
-	float: left;
+	top: 22px;
+	left: 0;
 	width: 235px;
 	z-index: 2;
-	position: relative;
+	position: fixed;
 	padding-bottom: 100px;
 	&:before {
 		content: '';

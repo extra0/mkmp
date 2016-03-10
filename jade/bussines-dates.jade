@@ -1,0 +1,42 @@
+extends _layout
+block content
+	.content-inner
+		h1.title._color-white.text-center._bg-blue бизнес встречи
+		br
+		br
+		.closest-event
+			.closest-event__block
+				p.closest-event__title Ближайшее мероприятие
+				.closest-event__inner
+					p.closest-event__strong-text когда:
+					p.closest-event__text.text-uppercase 22 апреля
+					p.closest-event__text с 19:00 до 22:00
+				.closest-event__inner
+					p.closest-event__strong-text где:
+					p.closest-event__text.text-uppercase Клуб-ресторан «ArteFaq»
+					p.closest-event__text г. Москва, ул. Большая Дмитровка, д.32, стр.1
+			a.closest-event__btn.fancybox(href="#registration") Зарегистрироваться
+			// форма регистрации
+			.modal#registration
+				form(action="#")
+					input.modal__input(type="text" placeholder="Имя")
+					input.modal__input(type="text" placeholder="Фамилия")
+					input.modal__input(type="email" placeholder="E-mail")
+					input.modal__input.mask(type="text" placeholder="Телефон")
+					input.modal__input(type="text" placeholder="Компания")
+					.text-center
+						button.btn(type="submit") Зарегистрироваться
+		.text-block__section.no-margin
+			iframe.pull-right(src="https://www.youtube.com/embed/GZ-3YwVQV0M" frameborder="0" allowfullscreen width="340" height="250" style="margin: 0 0 10px 40px;")
+			p <strong>Бизнес-встречи</strong> – это уникальные мероприятия в формате встречи с предпринимателями, которые уже добились значительного успеха. Данные мероприятия дают огромную возможность услышать ценную практическую информацию, задать актуальные вопросы, приобрести новые контакты. 
+			p Гостями Московского Клуба Молодых Предпринимателей были: Андрей Романенко, основатель «Qiwi» и «Run Capital»; Наталья Касперская, генеральный директор InfoWatch; Юрий Вировец, основатель Head Hunter, Давид Якобашвили, основатель «Вимм-Билль-Данн»; Сергей Железняк, Заместитель Председателя ГД РФ; Герман Клименко, основатель LiveInternet.ru, Борис Остроброд, основатель компании «Sela» и др.
+		br
+		br
+		.gallery__section
+			- for (i = 1; i <= 6; ++i) {
+				.gallery__block
+					a(href="#!")
+						img.gallery__bg-img(src="img/content/gallery.jpg", alt="")
+						.gallery__title-wrapper
+							h4.gallery__title Встреча Венчурного фонда Промсвязьбанка с Членами Московского.. Клуба Молодых...Предпринимателей
+			- }

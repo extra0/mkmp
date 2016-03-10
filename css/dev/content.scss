@@ -1813,3 +1813,52 @@
 		margin: 70px 0 40px 0;
 	}
 }
+// блок ближайших событий (сайтбар)
+.closest-event {
+	width: 208px;
+	margin: 0 0 30px 30px;
+	float: right;
+	&__block {
+		background: #3964ad;
+		padding: 24px 22px 2px 22px;
+		margin-bottom: 2px;
+	}
+	&__title {
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 24px;
+		margin: 0 0 16px;
+		font-family: $bold;
+		text-align: center;
+	}
+	&__btn {
+		font-size: 16px;
+		color: #fff;
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		text-transform: uppercase;
+		background: $red;
+		@include transition(all 0.4s ease-in-out);
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+	&__inner {
+		margin-bottom: 19px;
+	}
+	&__strong-text {
+		color: #5aade1;
+		font-size: 19px;
+		margin: 0 0 2px;
+		font-family: $bold; 
+		text-transform: uppercase;
+	}
+	&__text {
+		color: #fff;
+		margin: 0;
+		font-size: 16px;
+	}
+}
