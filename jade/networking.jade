@@ -1,0 +1,62 @@
+extends _layout
+block content
+	.content-inner
+		h1.title._color-white.text-center._bg-blue._font-size-37 Нетворкинг для предпринимателей
+		.iframe-wrapper
+			.iframe-wrapper__block
+				iframe(src="https://www.youtube.com/embed/GZ-3YwVQV0M" frameborder="0" allowfullscreen)
+			.iframe-wrapper__block
+				iframe(src="https://www.youtube.com/embed/GZ-3YwVQV0M" frameborder="0" allowfullscreen)
+		.closest-event
+			.closest-event__block
+				p.closest-event__title Ближайшее мероприятие
+				.closest-event__inner
+					p.closest-event__strong-text когда:
+					p.closest-event__text.text-uppercase 22 апреля
+					p.closest-event__text с 19:00 до 22:00
+				.closest-event__inner
+					p.closest-event__strong-text где:
+					p.closest-event__text.text-uppercase Клуб-ресторан «ArteFaq»
+					p.closest-event__text г. Москва, ул. Большая Дмитровка, д.32, стр.1
+			a.closest-event__btn.fancybox(href="#registration") Зарегистрироваться
+			// форма регистрации
+			.modal#registration
+				form(action="#")
+					input.modal__input(type="text" placeholder="Имя")
+					input.modal__input(type="text" placeholder="Фамилия")
+					input.modal__input(type="email" placeholder="E-mail")
+					input.modal__input.mask(type="text" placeholder="Телефон")
+					input.modal__input(type="text" placeholder="Компания")
+					.text-center
+						button.btn(type="submit") Зарегистрироваться
+		.text-block__section.no-margin
+			//- iframe.pull-right(src="https://www.youtube.com/embed/GZ-3YwVQV0M" frameborder="0" allowfullscreen width="340" height="250" style="margin: 0 0 10px 40px;")
+			p <strong>Нетворкинг для предпринимателей</strong> проходит в формате быстрых деловых знакомств – «Business Connect».
+			p Умение завязывать нужные деловые знакомства и устанавливать контакты в профессиональной среде – это одна из составляющих успеха в бизнесе. 
+			p «Business Connect» - это уникальный формат бизнес-знакомств, который  сэкономит ваше время. «Business Conneсt» позволяет за считанные минуты обменяться контактами и даже обсудить нюансы дальнейшего сотрудничества с десятками других предпринимателей и руководителей компаний.
+			strong Участники мероприятия:
+			ul
+				li генеральные директора компаний;
+				li собственники малого и среднего бизнеса;
+				li начинающие предприниматели.
+			br
+			strong За 3 часа вы получите:
+			ul
+				li знакомство с более чем 50 владельцами бизнеса и руководителями компаний;
+				li площадку для презентации своей компании в течение 2 минут;
+				li личное общение с каждым участником с обсуждением деталей возможного сотрудничества.
+			br
+			p Механизм проекта выстроен на основе классических правил Speed Dating. Участники последовательно пересаживаются от одного стола к другому, знакомятся, общаются, обмениваются визитками. На каждое бизнес экспресс-знакомство отведено 3 минуты, после чего необходимо пересесть за другой стол (по часовой стрелке).
+			strong «Business Connect» - это: 
+			ul
+				li потенциальные клиенты и поставщики;
+				li продвижение собственного бизнеса;
+				li новые партнеры для вашего бизнеса.
+		br
+		br
+		.gallery__section
+			- for (i = 1; i <= 6; ++i) {
+				.gallery__block
+					a.fancybox(href="img/content/gallery.jpg" rel="gallery")
+						img.gallery__bg-img(src="img/content/gallery.jpg", alt="")
+			- }

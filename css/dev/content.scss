@@ -29,7 +29,10 @@
 		margin: 50px 0;
 		font-weight: normal;
 	}
-	
+	&._font-size-37 {
+		font-size: 37px;
+		padding-bottom: 15px;
+	}
 }
 .subtitle {
 	font-size: 27px;
@@ -1860,5 +1863,20 @@
 		color: #fff;
 		margin: 0;
 		font-size: 16px;
+	}
+}
+// блок с видео
+.iframe-wrapper {
+	text-align: center;
+	margin: 30px 0;
+	&__block {
+		display: inline-block;
+		vertical-align: top;
+		margin: 20px;
+		width: 44%;
+		iframe {
+			width: 100%;
+			height: 270px;
+		}
 	}
 }
